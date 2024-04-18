@@ -1,0 +1,6 @@
+if SHIELD_ERGOALEX
+
+config ZMK_KEYBOARD_NAME
+    default "ergoalex"
+
+endif
