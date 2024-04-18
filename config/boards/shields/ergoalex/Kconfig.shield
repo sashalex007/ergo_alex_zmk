@@ -11,8 +11,8 @@ if SHIELD_ERGOALEX
 
     config ZMK_BLE_EXPERIMENTAL_FEATURES	
         default y
-        
-    BT_CTLR_TX_PWR_PLUS_8
+
+    config BT_CTLR_TX_PWR_PLUS_8
         default y
 
 endif
