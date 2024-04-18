@@ -1,2 +1,14 @@
-config SHIELD_ERGOALEX
-    def_bool $(shields_list_contains, ergoalex)
+if SHIELD_ERGOALEX
+
+    config ZMK_KEYBOARD_NAME
+        default "ergoalex"
+
+    config ZMK_SPLIT_BLE_ROLE_CENTRAL
+        default y
+
+    config ZMK_SPLIT
+        default y
+
+    CONFIG_ZMK_BLE_EXPERIMENTAL_FEATURES	
+        default y
+endif
