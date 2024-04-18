@@ -1,6 +1,9 @@
 if SHIELD_ERGOALEX
 
-config ZMK_KEYBOARD_NAME
-    default "ergoalex"
+    config ZMK_KEYBOARD_NAME
+        default "ergoalex"
+        
+    config ZMK_SPLIT_BLE_ROLE_CENTRAL
+        default y
 
 endif
