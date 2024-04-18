@@ -1,7 +1,7 @@
 if SHIELD_ERGOALEX
 
     config ZMK_KEYBOARD_NAME
-        default "ergoalex"
+        default "ergoalex_left"
 
     config ZMK_SPLIT_BLE_ROLE_CENTRAL
         default y
@@ -9,6 +9,6 @@ if SHIELD_ERGOALEX
     config ZMK_SPLIT
         default y
 
-    CONFIG_ZMK_BLE_EXPERIMENTAL_FEATURES	
+    config ZMK_BLE_EXPERIMENTAL_FEATURES	
         default y
 endif
