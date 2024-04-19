@@ -1,4 +1,4 @@
-if SHIELD_ERGOALEX_LEFT
+if SHIELD_ERGOALEX_RIGHT
 
     config ZMK_KEYBOARD_NAME
         default "ergoalex"
