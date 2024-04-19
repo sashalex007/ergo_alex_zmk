@@ -6,6 +6,11 @@ if SHIELD_ERGOALEX_LEFT
     config ZMK_SPLIT_BLE_ROLE_CENTRAL
         default y
 
+endif
+
+
+if SHIELD_ERGOALEX_LEFT || SHIELD_ERGOALEX_RIGHT
+
     config ZMK_SPLIT
         default y
 
