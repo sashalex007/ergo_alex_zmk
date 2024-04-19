@@ -19,5 +19,5 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: ergoalex
+    shield: ergoalex_left
 
