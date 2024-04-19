@@ -1,8 +1,6 @@
 #include "ergoalex.dtsi" 
 
 &kscan0 {
-    compatible = "zmk,kscan-gpio-matrix";
-    diode-direction = "col2row";
     row-gpios = <&gpio0 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
                 <&gpio0 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
                 <&gpio1 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
