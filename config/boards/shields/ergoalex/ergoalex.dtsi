@@ -2,8 +2,8 @@
 
 / {
     chosen {
-        zmk,matrix-transform = &default_transform;
         zmk,kscan = &kscan0;
+        zmk,matrix-transform = &default_transform;
         zmk,battery = &vbatt;
     };
 
