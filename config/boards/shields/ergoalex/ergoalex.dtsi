@@ -10,10 +10,10 @@
     vbatt0: vbatt {
         compatible = "zmk,battery-voltage-divider";
         label = "BATTERY";
-        io-channels = <&adc 2>;
+        io-channels = <&adc 4>;
         output-ohms = <2000000>;
         full-ohms = <(2000000+806000)>;
-        power-gpios = <&gpio1 4 GPIO_ACTIVE_HIGH>;
+        power-gpios = <&gpio1 4 (GPIO_ACTIVE_HIGH)>;
     };
 
 
