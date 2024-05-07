@@ -53,8 +53,8 @@
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
         };
-
     };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -67,7 +67,7 @@
             >;
         };
 
-        nav {
+        nav_layer {
             bindings = <
             ESC         LG(X)  LG(C)  LG(V)  LG(FSLH)           ___       LA(LEFT)  UP    LA(RIGHT)  ___
             LSHFT       LG(Z)  DEL    RET    ___                LG(LEFT)  LEFT      DOWN  RIGHT      LG(RIGHT)
@@ -76,7 +76,7 @@
             >;
         };
 
-        spl {
+        spl_layer {
             bindings = <
                 EXCL  RBRC  RBKT  RPAR  PRCNT     ___  ___  ___  ___  ___
                 PLUS  LBRC  LBKT  LPAR  EQUAL     ___  ___  ___  ___  ___
@@ -85,7 +85,7 @@
             >;
         };
 
-        spr {
+        spr_layer {
             bindings = <
                 ___  ___  ___  ___  ___     ___    AMPS   PIPE   CARET  ___
                 ___  ___  ___  ___  ___     EQUAL  GRAVE  UNDER  QMARK  MINUS
@@ -94,7 +94,7 @@
             >;
         };
 
-        num {
+        num_layer {
             bindings = <
                 N5   N6   N7   N8   N9      ___  ___  ___  ___  ___
                 N0   N1   N2   N3   N4      ___  ___  ___  ___  ___
@@ -103,7 +103,7 @@
             >;
         };
 
-        bt {
+        bt_layer {
             bindings = <
                 &bt BT_SEL 0  &bt BT_SEL 1    XXX  XXX  XXX             ___  ___  ___  ___  ___
                 &bt BT_CLR    &bt BT_CLR_ALL  XXX  XXX  &sys_reset      ___  ___  ___  ___  ___
@@ -112,7 +112,7 @@
             >;
         };
 
-        blank {
+        blank_layer {
             bindings = <
                 ___  ___  ___  ___  ___     ___  ___  ___  ___  ___
                 ___  ___  ___  ___  ___     ___  ___  ___  ___  ___
@@ -120,7 +120,6 @@
                                ___  ___     ___ ___
             >;
         };
-
         
     };
 };
