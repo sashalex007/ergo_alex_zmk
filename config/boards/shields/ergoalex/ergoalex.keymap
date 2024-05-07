@@ -43,7 +43,7 @@
         sft: shift {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
+            flavor = "tap-preferred";
             tapping-term-ms = <140>;
             bindings = <&kp>, <&kp>;
         };
