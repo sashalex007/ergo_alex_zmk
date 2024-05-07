@@ -69,35 +69,35 @@
 
         nav_layer {
             bindings = <
-            ESC         LG(X)  LG(C)  LG(V)  LG(FSLH)           ___       LA(LEFT)  UP    LA(RIGHT)  ___
-            LSHFT       LG(Z)  DEL    RET    ___                LG(LEFT)  LEFT      DOWN  RIGHT      LG(RIGHT)
-            LG(LS(N4))  ___    ___    TAB    ___                ___       ___       ___   ___        ___
-                                      ___    ___                ___       ___   
+            &kp ESC         &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(FSLH)       ___           &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  ___
+            &kp LSHFT       &kp LG(Z)  &kp DEL    &kp RET    ___                &kp LG(LEFT)  &kp LEFT      &kp DOWN  &kp RIGHT      &kp LG(RIGHT)
+            &kp LG(LS(N4))  ___        ___        &kp TAB    ___                ___           ___           ___       ___            ___
+                                                      ___    ___                ___           ___   
             >;
         };
 
         spl_layer {
             bindings = <
-                EXCL  RBRC  RBKT  RPAR  PRCNT     ___  ___  ___  ___  ___
-                PLUS  LBRC  LBKT  LPAR  EQUAL     ___  ___  ___  ___  ___
-                STAR  HASH  BSLH  FSLH  AT        ___  ___  ___  ___  ___
-                                  ___   ___       ___ ___
+                &kp EXCL  &kp RBRC  &kp RBKT  &kp RPAR  &kp PRCNT     ___  ___  ___  ___  ___
+                &kp PLUS  &kp LBRC  &kp LBKT  &kp LPAR  &kp EQUAL     ___  ___  ___  ___  ___
+                &kp STAR  &kp HASH  &kp BSLH  &kp FSLH  &kp AT        ___  ___  ___  ___  ___
+                                              ___       ___           ___ ___
             >;
         };
 
         spr_layer {
             bindings = <
-                ___  ___  ___  ___  ___     ___    AMPS   PIPE   CARET  ___
-                ___  ___  ___  ___  ___     EQUAL  GRAVE  UNDER  QMARK  MINUS
-                ___  ___  ___  ___  ___     ___    DLLR   TILDE  ___    ___
-                               ___  ___     ___    ___
+                ___  ___  ___  ___  ___     ___        &kp AMPS   &kp PIPE   &kp CARET  ___
+                ___  ___  ___  ___  ___     &kp EQUAL  &kp GRAVE  &kp UNDER  &kp QMARK  &kp MINUS
+                ___  ___  ___  ___  ___     ___        &kp DLLR   &kp TILDE  ___        ___
+                               ___  ___     ___        ___
             >;
         };
 
         num_layer {
             bindings = <
-                N5   N6   N7   N8   N9      ___  ___  ___  ___  ___
-                N0   N1   N2   N3   N4      ___  ___  ___  ___  ___
+                &kp N5   &kp N6   &kp N7   &kp N8   &kp N9      ___  ___  ___  ___  ___
+                &kp N0   &kp N1   &kp N2   &kp N3   &kp N4      ___  ___  ___  ___  ___
                 ___  ___  ___  ___  ___     ___  ___  ___  ___  ___
                                ___  ___     ___ ___
             >;
