@@ -147,10 +147,10 @@
 
         sys_layer {
             bindings = <
-                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    ___  ___  ___  ___  ___
-                XXX           XXX           XXX           XXX           &sys_reset      ___  ___  ___  ___  ___
-                &bt BT_CLR    XXX           XXX           XXX           &bootloader     ___  ___  ___  ___  ___
-                                                          XXX           XXX             ___  ___ 
+                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      ___          ___  ___  ___  ___
+                XXX           XXX           XXX           XXX           &sys_reset        &sys_reset   ___  ___  ___  ___
+                &bt BT_CLR    XXX           XXX           XXX           &bootloader       &bootloader  ___  ___  ___  ___
+                                                          XXX           XXX               ___          ___ 
             >;
         };
 
