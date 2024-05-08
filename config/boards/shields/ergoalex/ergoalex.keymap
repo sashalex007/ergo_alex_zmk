@@ -64,6 +64,24 @@
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 32 33>; 
         };
 
+        hl2: home_row_mod_left_slow {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <350>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31>; 
+        };
+
+        hr2: home_row_mod_right_slow {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <350>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 32 33>; 
+        };
+
         sft: shift {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -78,19 +96,19 @@
 
         default_layer {
             bindings = <
-                &colon         &kp COMMA  &kp DOT    &kp P  &kp Y           &kp F    &kp G      &kp C      &kp R  &kp L
-                &sft LSHFT A   &kp O      &hr SPR E  &kp U  &kp I           &kp D    &hl NUM H  &hl SPL T  &kp N  &sft RSHFT S
-                &kp SQT        &kp Q      &kp J      &kp K  &kp X           &kp B    &kp M      &kp W      &kp V  &kp Z
-                                          &mo BT     &kp SPACE              &mo NAV  &kp RMETA
+                &colon        &kp COMMA     &kp DOT    &kp P  &kp Y           &kp F         &kp G      &kp C      &kp R         &kp L
+                &sft LSHFT A  &hr2 LMETA O  &hr SPR E  &kp U  &hr2 LCTRL I    &hl2 RCTRL D  &hl NUM H  &hl SPL T  &hl2 RMETA N  &sft RSHFT S
+                &kp SQT       &kp Q         &kp J      &kp K  &kp X           &kp B         &kp M      &kp W      &kp V         &kp Z
+                                            &mo BT     &kp SPACE              &mo NAV       &kp RMETA
             >;
         };
 
         nav_layer {
             bindings = <
-            &kp ESC         &kp LG(X)  &kp LG(C)   &kp LG(V)  &kp LG(FSLH)       ___           &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  ___
-            &kp LSHFT       &kp LG(Z)  &kp BSPC    &kp RET    ___                &kp LG(LEFT)  &kp LEFT      &kp DOWN  &kp RIGHT      &kp LG(RIGHT)
-            &kp LG(LS(N4))  ___        ___         &kp TAB    ___                ___           ___           ___       ___            ___
-                                                   ___        ___                ___           ___   
+            &kp ESC         &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(FSLH)       ___           &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  ___
+            &kp LSHFT       &kp LG(Z)  &kp BSPC   &kp RET    ___                &kp LG(LEFT)  &kp LEFT      &kp DOWN  &kp RIGHT      &kp LG(RIGHT)
+            &kp LG(LS(N4))  ___        ___        &kp TAB    ___                ___           ___           ___       ___            ___
+                                                  ___        ___                ___           ___   
             >;
         };
 
@@ -99,7 +117,7 @@
                 &kp EXCL  &kp RBRC  &kp RBKT  &kp RPAR  &kp PRCNT     ___  ___  ___  ___  ___
                 &kp PLUS  &kp LBRC  &kp LBKT  &kp LPAR  &kp EQUAL     ___  ___  ___  ___  ___
                 &kp STAR  &kp HASH  &kp BSLH  &kp FSLH  &kp AT        ___  ___  ___  ___  ___
-                                              ___       ___           ___ ___
+                                              ___       ___           ___  ___
             >;
         };
 
@@ -114,10 +132,10 @@
 
         num_layer {
             bindings = <
-                &kp N5   &kp N6   &kp N7   &kp N8   &kp N9      ___  ___  ___  ___  ___
-                &kp N0   &kp N1   &kp N2   &kp N3   &kp N4      ___  ___  ___  ___  ___
-                ___  ___  ___  ___  ___     ___  ___  ___  ___  ___
-                               ___  ___     ___ ___
+                &kp N5  &kp N6  &kp N7   &kp N8  &kp N9     ___  ___  ___  ___  ___
+                &kp N0  &kp N1  &kp N2   &kp N3  &kp N4     ___  ___  ___  ___  ___
+                ___     ___     ___      ___     ___        ___  ___  ___  ___  ___
+                                         ___     ___        ___  ___
             >;
         };
 
@@ -135,7 +153,7 @@
                 ___  ___  ___  ___  ___     ___  ___  ___  ___  ___
                 ___  ___  ___  ___  ___     ___  ___  ___  ___  ___
                 ___  ___  ___  ___  ___     ___  ___  ___  ___  ___
-                               ___  ___     ___ ___
+                               ___  ___     ___  ___
             >;
         };
         
