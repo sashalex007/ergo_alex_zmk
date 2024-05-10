@@ -102,18 +102,18 @@
 
         default_layer {
             bindings = <
-                &colon        &kp COMMA     &kp DOT            &kp P  &kp Y           &kp F         &kp G      &kp C      &kp R         &kp L
-                &sft LSHFT A  &hr2 LMETA O  &hr SPR E          &kp U  &hr2 LCTRL I    &hl2 RCTRL D  &hl NUM H  &hl SPL T  &hl2 RMETA N  &sft RSHFT S
-                &kp SQT       &kp Q         &kp J              &kp K  &kp X           &kp B         &kp M      &kp W      &kp V         &kp Z
-                                            &sys SYS LG(SPACE)  &kp SPACE               &mo NAV       &kp RMETA
+                &colon        &kp COMMA     &kp DOT             &kp P  &kp Y           &kp F         &kp G      &kp C      &kp R         &kp L
+                &sft LSHFT A  &hr2 LMETA O  &hr SPR E           &kp U  &hr2 LCTRL I    &hl2 RCTRL D  &hl NUM H  &hl SPL T  &hl2 RMETA N  &sft RSHFT S
+                &kp SQT       &kp Q         &kp J               &kp K  &kp X           &kp B         &kp M      &kp W      &kp V         &kp Z
+                                            &sys SYS LG(SPACE)  &kp SPACE              &mo NAV       &kp RALT
             >;
         };
 
         nav_layer {
             bindings = <
-            &kp ESC         &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(FSLH)       ___           &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  ___
+            &kp ESC         &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(FSLH)       &kp PG_UP     &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  ___
             &kp LSHFT       &kp LG(Z)  &kp BSPC   &kp RET    ___                &kp LG(LEFT)  &kp LEFT      &kp DOWN  &kp RIGHT      &kp LG(RIGHT)
-            &kp LG(LS(N4))  ___        ___        &kp TAB    ___                ___           ___           ___       ___            ___
+            &kp LG(LS(N4))  ___        ___        &kp TAB    ___                &kp PG_DN     ___       ___            ___
                                                   ___        ___                ___           ___   
             >;
         };
@@ -129,12 +129,13 @@
 
         spr_layer {
             bindings = <
-                ___  ___  ___  ___  ___     ___        &kp AMPS   &kp PIPE   &kp CARET  ___
+                ___  ___  ___  ___  ___     ___        &kp AMPS   &kp PIPE   &kp LT     &kp GT
                 ___  ___  ___  ___  ___     &kp EQUAL  &kp GRAVE  &kp UNDER  &kp QMARK  &kp MINUS
-                ___  ___  ___  ___  ___     ___        &kp DLLR   &kp TILDE  ___        ___
+                ___  ___  ___  ___  ___     ___        &kp DLLR   &kp TILDE  &kp CARET  ___
                                ___  ___     ___        ___
             >;
         };
+        
 
         num_layer {
             bindings = <
