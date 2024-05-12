@@ -20,21 +20,21 @@
         combo_equal {
             timeout-ms = <120>;
             key-positions = <17 14>;
-            slow-release = true;
+            slow-release = "true";
             bindings = <&kp EQUAL>, <&mo SPR>;
         };
 
         combo_lpar {
             timeout-ms = <120>;
             key-positions = <17 13>;
-            slow-release = true;
+            slow-release = "true";
             bindings = <&kp LPAR>, <&mo SPR>;
         };
         
         combo_rpar {
             timeout-ms = <120>;
             key-positions = <17 3>;
-            slow-release = true;
+            slow-release = "true";
             bindings = <&kp RPAR>, <&mo SPR>;
         };
     };
