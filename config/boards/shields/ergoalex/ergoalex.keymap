@@ -28,7 +28,7 @@
             timeout-ms = <120>;
             key-positions = <17 13>;
             slow-release;
-            bindings = <&kp LPAR>, <&mo SPR>;
+            bindings = <&mo SPR>, <&kp LPAR>;
         };
         
         combo_rpar {
