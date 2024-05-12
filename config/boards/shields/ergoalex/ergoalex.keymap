@@ -14,6 +14,19 @@
 #define SYS 5
 
 / { 
+
+    macros {
+        lpar: left_parentheses {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &mo SPR>
+                , <&macro_tap &kp LPAR>
+                , <&macro_release &mo SPR>
+                ;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -21,21 +34,21 @@
             timeout-ms = <120>;
             key-positions = <17 14>;
             slow-release;
-            bindings = <&kp EQUAL>, <&mo SPR>;
+            bindings = <&kp EQUAL>;
         };
 
         combo_lpar {
             timeout-ms = <120>;
             key-positions = <17 13>;
             slow-release;
-            bindings = <&mo SPR>, <&kp LPAR>;
+            bindings = <&lpar>;
         };
         
         combo_rpar {
             timeout-ms = <120>;
             key-positions = <17 3>;
             slow-release;
-            bindings = <&kp RPAR>, <&mo SPR>;
+            bindings = <&kp RPAR>;
         };
     };
 
