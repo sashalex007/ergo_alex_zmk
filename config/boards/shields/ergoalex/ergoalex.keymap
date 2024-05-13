@@ -36,6 +36,7 @@
             timeout-ms = <50>;
             key-positions = <17 14>;
             layers = <DEF>;
+            slow-release;
             bindings = <&spl EQUAL>;
         };
 
@@ -43,6 +44,7 @@
             timeout-ms = <50>;
             key-positions = <17 13>;
             layers = <DEF>;
+            slow-release;
             bindings = <&spl LPAR>;
         };
         
@@ -50,6 +52,7 @@
             timeout-ms = <50>;
             key-positions = <17 3>;
             layers = <DEF>;
+            slow-release;
             bindings = <&spl RPAR>;
         };
     };
