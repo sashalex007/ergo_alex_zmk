@@ -17,13 +17,16 @@
 
     macros {
         spl: left_parentheses {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
             bindings
-                = <&macro_press &mo SPL>
-                , <&macro_tap &kp LPAR>
+                = <&macro_param_1to1>
+                , <&macro_press &mo MACRO_PLACEHOLDER>
+                , <&macro_param_2to1>
+                , <&macro_tap &kp MACRO_PLACEHOLDER>
                 , <&macro_pause_for_release>
-                , <&macro_release &mo SPL>
+                , <&macro_param_1to1>
+                , <&macro_release &mo MACRO_PLACEHOLDER>
                 ;
         };
     };
@@ -44,7 +47,7 @@
             key-positions = <17 13>;
             layers = <DEF>;
             slow-release;
-            bindings = <&spl>;
+            bindings = <&spl SPL LPAR>;
         };
         
         combo_rpar {
