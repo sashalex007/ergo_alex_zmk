@@ -42,7 +42,7 @@
         combo_lpar {
             timeout-ms = <50>;
             key-positions = <17 13>;
-            layers = <BASE>;
+            layers = <DEF>;
             bindings = <&spl LPAR>;
         };
         
