@@ -35,21 +35,21 @@
         combo_equal {
             timeout-ms = <50>;
             key-positions = <17 14>;
-            slow-release;
+            layers = <BASE>;
             bindings = <&spl EQUAL>;
         };
 
         combo_lpar {
             timeout-ms = <50>;
             key-positions = <17 13>;
-            slow-release;
+            layers = <BASE>;
             bindings = <&spl LPAR>;
         };
         
         combo_rpar {
             timeout-ms = <50>;
             key-positions = <17 3>;
-            slow-release;
+            layers = <BASE>;
             bindings = <&spl RPAR>;
         };
     };
