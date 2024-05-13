@@ -35,7 +35,7 @@
         combo_equal {
             timeout-ms = <50>;
             key-positions = <17 14>;
-            layers = <BASE>;
+            layers = <DEF>;
             bindings = <&spl EQUAL>;
         };
 
@@ -49,7 +49,7 @@
         combo_rpar {
             timeout-ms = <50>;
             key-positions = <17 3>;
-            layers = <BASE>;
+            layers = <DEF>;
             bindings = <&spl RPAR>;
         };
     };
