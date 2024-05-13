@@ -52,7 +52,7 @@
             key-positions = <17 3>;
             layers = <DEF>;
             slow-release;
-            bindings = <<&kp RPAR &mo SPL>;
+            bindings = <&kp RPAR &mo SPL>;
         };
     };
 
