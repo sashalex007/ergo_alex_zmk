@@ -16,7 +16,7 @@
 / { 
 
     macros {
-        mac: macro_combo {
+        mac: macro_combo_layer {
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
             bindings
@@ -29,6 +29,20 @@
                 , <&macro_release &mo MACRO_PLACEHOLDER>
                 ;
         };
+        mac2: macro_combo_press {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings
+                = <&macro_param_1to1>
+                , <&macro_press &kp MACRO_PLACEHOLDER>
+                , <&macro_param_2to1>
+                , <&macro_tap &kp MACRO_PLACEHOLDER>
+                , <&macro_pause_for_release>
+                , <&macro_param_1to1>
+                , <&macro_release &kp MACRO_PLACEHOLDER>
+                ;
+        };
+        
     };
 
     combos {
@@ -56,6 +70,14 @@
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPL RPAR>;
+        };
+
+        combo_double_quote {
+            timeout-ms = <50>;
+            key-positions = <19 20>;
+            layers = <DEF>;
+            slow-release;
+            bindings = <&mac2 RSHFT SQT>;
         };
     };
 
