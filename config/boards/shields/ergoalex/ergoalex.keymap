@@ -16,7 +16,7 @@
 / { 
 
     macros {
-        spl: left_parentheses {
+        mac: macro_combo {
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
             bindings
@@ -39,7 +39,7 @@
             key-positions = <17 14>;
             layers = <DEF>;
             slow-release;
-            bindings = <&kp EQUAL>;
+            bindings = <&mac SPL EQUAL>;
         };
 
         combo_lpar {
@@ -47,7 +47,7 @@
             key-positions = <17 13>;
             layers = <DEF>;
             slow-release;
-            bindings = <&spl SPL LPAR>;
+            bindings = <&mac SPL LPAR>;
         };
         
         combo_rpar {
@@ -55,7 +55,7 @@
             key-positions = <17 3>;
             layers = <DEF>;
             slow-release;
-            bindings = <&kp RPAR &mo SPL>;
+            bindings = <&mac SPL RPAR>;
         };
     };
 
