@@ -13,6 +13,7 @@
 #define NUM 4
 #define SYS 5
 
+#define COMBO 70
 #define TAP 280
 #define IDLE 0
 
@@ -52,7 +53,7 @@
         compatible = "zmk,combos";
 
         combo_equal {
-            timeout-ms = <50>;
+            timeout-ms = <COMBO>;
             key-positions = <17 14>;
             layers = <DEF>;
             slow-release;
@@ -60,7 +61,7 @@
         };
 
         combo_lpar {
-            timeout-ms = <50>;
+            timeout-ms = <COMBO>;
             key-positions = <17 13>;
             layers = <DEF>;
             slow-release;
@@ -68,7 +69,7 @@
         };
         
         combo_rpar {
-            timeout-ms = <50>;
+            timeout-ms = <COMBO>;
             key-positions = <17 3>;
             layers = <DEF>;
             slow-release;
@@ -76,7 +77,7 @@
         };
 
         combo_lbkt {
-            timeout-ms = <50>;
+            timeout-ms = <COMBO>;
             key-positions = <17 12>;
             layers = <DEF>;
             slow-release;
@@ -84,7 +85,7 @@
         };
         
         combo_rbkt {
-            timeout-ms = <50>;
+            timeout-ms = <COMBO>;
             key-positions = <17 2>;
             layers = <DEF>;
             slow-release;
@@ -92,7 +93,7 @@
         };
 
         combo_double_quote {
-            timeout-ms = <50>;
+            timeout-ms = <COMBO>;
             key-positions = <19 20>;
             layers = <DEF>;
             slow-release;
