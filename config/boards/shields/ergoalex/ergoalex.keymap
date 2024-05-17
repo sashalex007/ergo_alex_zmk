@@ -14,7 +14,7 @@
 #define SYS 5
 
 #define TAP 280
-#define IDLE 120
+#define IDLE 0
 
 / { 
 
@@ -73,6 +73,22 @@
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPL RPAR>;
+        };
+
+        combo_lbkt {
+            timeout-ms = <50>;
+            key-positions = <17 12>;
+            layers = <DEF>;
+            slow-release;
+            bindings = <&mac SPL LBKT>;
+        };
+        
+        combo_rbkt {
+            timeout-ms = <50>;
+            key-positions = <17 2>;
+            layers = <DEF>;
+            slow-release;
+            bindings = <&mac SPL RBKT>;
         };
 
         combo_double_quote {
@@ -150,7 +166,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp>, <&kp>; 
         };
 
