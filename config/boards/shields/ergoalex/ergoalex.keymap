@@ -198,7 +198,7 @@
             bindings = <&mo>, <&kp>;
         };
 
-        hl2: home_row_mod_left {
+        hl2: home_row_mod_left_timeless {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
@@ -208,7 +208,7 @@
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31>; 
         };
 
-        hr2: home_row_mod_right {
+        hr2: home_row_mod_right_timeless {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
