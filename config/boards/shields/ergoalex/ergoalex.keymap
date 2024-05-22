@@ -245,11 +245,10 @@
                 &colon        &kp COMMA     &kp DOT    &kp P               &kp Y                    &kp F         &kp G        &hl NUM C   &kp R         &kp L
                 &sft LSHFT A  &hr2 LMETA O  &hr SPR E  &hr2 LALT U         &hr2 LCTRL I             &hl2 RCTRL D  &hl2 RALT H  &hl SPL T   &hl2 RMETA N  &sft RSHFT S
                 &kp SQT       &kp Q         &kp J      &kp K               &kp X                    &kp B         &kp M        &kp W       &kp V         &kp Z
-                                                       &sys SYS LG(SPACE)  &kp SPACE                &mo NAV       &kp RALT
+                                                       &sys SYS LG(SPACE)  &kp SPACE                &mo NAV       &mo NUMS
             >;
         };
 
-    
 
         nav_layer {
             bindings = <
