@@ -13,7 +13,7 @@
 #define NUM 4
 #define SYS 5
 
-#define COMBO 70
+#define COMBO 50
 #define TAP 280
 #define IDLE 150
 #define COMBO_IDLE 50
