@@ -178,7 +178,7 @@
             bindings = <&mac SPL FSLH>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
-
+    
         l_combo_at {
             timeout-ms = <COMBO>;
             key-positions = <17 24>;
@@ -304,6 +304,8 @@
             bindings = <&mac2 RSHFT SQT>;
         };
     };
+
+
 
     behaviors {
         colon: colon {
