@@ -61,6 +61,7 @@
             bindings = <&mac SPL EXCL>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
+        
         l_combo_rbrc {
             timeout-ms = <COMBO>;
             key-positions = <17 1>;
@@ -69,6 +70,7 @@
             bindings = <&mac SPL RBRC>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
+
         l_combo_rbkt {
             timeout-ms = <COMBO>;
             key-positions = <17 2>;
@@ -77,6 +79,7 @@
             bindings = <&mac SPL RBKT>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
+
         l_combo_rpar {
             timeout-ms = <COMBO>;
             key-positions = <17 3>;
@@ -85,6 +88,7 @@
             bindings = <&mac SPL RPAR>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
+
         l_combo_prcnt {
             timeout-ms = <COMBO>;
             key-positions = <17 4>;
@@ -93,6 +97,7 @@
             bindings = <&mac SPL PRCNT>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
+
         l_combo_plus {
             timeout-ms = <COMBO>;
             key-positions = <17 10>;
@@ -101,6 +106,7 @@
             bindings = <&mac SPL PLUS>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
+
         l_combo_lbrc {
             timeout-ms = <COMBO>;
             key-positions = <17 11>;
@@ -109,6 +115,7 @@
             bindings = <&mac SPL LBRC>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
+
         l_combo_lbkt {
             timeout-ms = <COMBO>;
             key-positions = <17 12>;
@@ -117,6 +124,7 @@
             bindings = <&mac SPL LBKT>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
+
         l_combo_lpar {
             timeout-ms = <COMBO>;
             key-positions = <17 13>;
@@ -125,14 +133,16 @@
             bindings = <&mac SPL LPAR>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
+
         l_combo_equal {
             timeout-ms = <COMBO>;
             key-positions = <17 14>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPL EQUAL>;
-            require-prior-idle-ms = <COMBO_IDLE>;
+            require-prior-idle-ms = <COMBO_IDLE>; 
         };
+
         l_combo_star {
             timeout-ms = <COMBO>;
             key-positions = <17 20>;
@@ -141,6 +151,7 @@
             bindings = <&mac SPL STAR>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
+
         l_combo_hash {
             timeout-ms = <COMBO>;
             key-positions = <17 21>;
@@ -149,6 +160,7 @@
             bindings = <&mac SPL HASH>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
+
         l_combo_bslh {
             timeout-ms = <COMBO>;
             key-positions = <17 22>;
@@ -157,6 +169,7 @@
             bindings = <&mac SPL BSLH>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
+
         l_combo_fslh {
             timeout-ms = <COMBO>;
             key-positions = <17 23>;
@@ -165,6 +178,7 @@
             bindings = <&mac SPL FSLH>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
+
         l_combo_at {
             timeout-ms = <COMBO>;
             key-positions = <17 24>;
@@ -174,9 +188,6 @@
             require-prior-idle-ms = <COMBO_IDLE>;
         };
 
-
-
-
         r_combo_amps {
             timeout-ms = <COMBO>;
             key-positions = <12 6>;
@@ -185,6 +196,7 @@
             bindings = <&mac SPR AMPS>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
+
         r_combo_pipe {
             timeout-ms = <COMBO>;
             key-positions = <12 7>;
@@ -193,6 +205,7 @@
             bindings = <&mac SPR PIPE>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
+
         r_combo_lt {
             timeout-ms = <COMBO>;
             key-positions = <12 8>;
@@ -201,6 +214,7 @@
             bindings = <&mac SPR LT>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
+
         r_combo_gt {
             timeout-ms = <COMBO>;
             key-positions = <12 9>;
@@ -209,6 +223,7 @@
             bindings = <&mac SPR GT>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
+
         r_combo_equal {
             timeout-ms = <COMBO>;
             key-positions = <12 15>;
@@ -217,6 +232,7 @@
             bindings = <&mac SPR EQUAL>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
+
         r_combo_grave {
             timeout-ms = <COMBO>;
             key-positions = <12 16>;
@@ -225,6 +241,7 @@
             bindings = <&mac SPR GRAVE>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
+
         r_combo_qmark {
             timeout-ms = <COMBO>;
             key-positions = <12 18>;
@@ -233,6 +250,7 @@
             bindings = <&mac SPR QMARK>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
+
         r_combo_minus {
             timeout-ms = <COMBO>;
             key-positions = <12 19>;
@@ -241,6 +259,7 @@
             bindings = <&mac SPR MINUS>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
+
         r_combo_dllr {
             timeout-ms = <COMBO>;
             key-positions = <12 26>;
@@ -249,6 +268,7 @@
             bindings = <&mac SPR DLLR>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
+
         r_combo_tilde {
             timeout-ms = <COMBO>;
             key-positions = <12 27>;
@@ -257,6 +277,7 @@
             bindings = <&mac SPR TILDE>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
+
         r_combo_caret {
             timeout-ms = <COMBO>;
             key-positions = <12 28>;
@@ -265,6 +286,7 @@
             bindings = <&mac SPR CARET>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
+
         r_combo_under {
             timeout-ms = <COMBO>;
             key-positions = <12 29>;
@@ -273,8 +295,6 @@
             bindings = <&mac SPR UNDER>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
-
-
 
         sft_combo_double_quote {
             timeout-ms = <COMBO>;
