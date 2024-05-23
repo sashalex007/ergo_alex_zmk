@@ -34,6 +34,7 @@
                 , <&macro_release &mo MACRO_PLACEHOLDER>
                 ;
         };
+
         mac2: macro_press_tap {
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
@@ -46,8 +47,7 @@
                 , <&macro_param_1to1>
                 , <&macro_release &kp MACRO_PLACEHOLDER>
                 ;
-        };
-        
+        };  
     };
     
     combos {
@@ -96,7 +96,7 @@
             slow-release;
             bindings = <&mac SPL PRCNT>;
             require-prior-idle-ms = <COMBO_IDLE>;
-        };
+        }; 
 
         l_combo_plus {
             timeout-ms = <COMBO>;
@@ -150,7 +150,7 @@
             slow-release;
             bindings = <&mac SPL STAR>;
             require-prior-idle-ms = <COMBO_IDLE>;
-        };
+        }
 
         l_combo_hash {
             timeout-ms = <COMBO>;
@@ -380,7 +380,6 @@
                                                      &sys SYS LG(SPACE)  &kp SPACE                &mo NAV       &mo NUM
             >;
         };
-
 
         nav_layer {
             bindings = <
