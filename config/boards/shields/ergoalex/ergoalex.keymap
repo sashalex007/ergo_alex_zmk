@@ -150,7 +150,7 @@
             slow-release;
             bindings = <&mac SPL STAR>;
             require-prior-idle-ms = <COMBO_IDLE>;
-        }
+        };
 
         l_combo_hash {
             timeout-ms = <COMBO>;
