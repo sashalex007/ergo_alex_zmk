@@ -217,14 +217,6 @@
             bindings = <&mac SPR EQUAL>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
-        r_combo_equal {
-            timeout-ms = <COMBO>;
-            key-positions = <12 15>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPR EQUAL>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
         r_combo_grave {
             timeout-ms = <COMBO>;
             key-positions = <12 16>;
