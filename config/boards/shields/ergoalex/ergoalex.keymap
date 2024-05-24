@@ -215,12 +215,12 @@
             bindings = <&mac SPR EQUAL>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
-        r_combo_grave {
+        r_combo_under {
             timeout-ms = <COMBO>;
             key-positions = <12 16>;
             layers = <DEF>;
             slow-release;
-            bindings = <&mac SPR GRAVE>;
+            bindings = <&mac SPR UNDER>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
         r_combo_qmark {
@@ -263,14 +263,15 @@
             bindings = <&mac SPR CARET>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
-        r_combo_under {
+        r_combo_grave {
             timeout-ms = <COMBO>;
             key-positions = <12 29>;
             layers = <DEF>;
             slow-release;
-            bindings = <&mac SPR UNDER>;
+            bindings = <&mac SPR GRAVE>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
+        
 
 
         r_combo_five {
