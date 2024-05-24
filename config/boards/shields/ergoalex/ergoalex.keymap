@@ -185,20 +185,20 @@
             bindings = <&mac SPR AMPS>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
-        r_combo_under {
+        r_combo_pipe {
             timeout-ms = <COMBO>;
             key-positions = <12 6>;
             layers = <DEF>;
             slow-release;
-            bindings = <&mac SPR UNDER>;
+            bindings = <&mac SPR PIPE>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
-        r_combo_pipe {
+        r_combo_under {
             timeout-ms = <COMBO>;
             key-positions = <12 7>;
             layers = <DEF>;
             slow-release;
-            bindings = <&mac SPR PIPE>;
+            bindings = <&mac SPR UNDER>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
         r_combo_lt {
