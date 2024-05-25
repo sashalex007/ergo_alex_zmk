@@ -13,12 +13,15 @@
 #define NUM 4
 #define SYS 5
 
-#define COMBO 65
 #define TAP 280
 #define IDLE 150
-#define COMBO_IDLE 50
+#define COMBO 40
+#define COMBO_IDLE 150
 
+#define SPL_KEY 17
+#define SPR_KEY 12
 #define NUM_KEY 16
+#define NAV_KEY 32
 
 / { 
 
@@ -57,7 +60,7 @@
 
         l_combo_excl {
             timeout-ms = <COMBO>;
-            key-positions = <17 0>;
+            key-positions = <SPL_KEY 0>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPL EXCL>;
@@ -65,7 +68,7 @@
         };
         l_combo_rbrc {
             timeout-ms = <COMBO>;
-            key-positions = <17 1>;
+            key-positions = <SPL_KEY 1>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPL RBRC>;
@@ -73,7 +76,7 @@
         };
         l_combo_rbkt {
             timeout-ms = <COMBO>;
-            key-positions = <17 2>;
+            key-positions = <SPL_KEY 2>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPL RBKT>;
@@ -81,7 +84,7 @@
         };
         l_combo_rpar {
             timeout-ms = <COMBO>;
-            key-positions = <17 3>;
+            key-positions = <SPL_KEY 3>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPL RPAR>;
@@ -89,7 +92,7 @@
         };
         l_combo_prcnt {
             timeout-ms = <COMBO>;
-            key-positions = <17 4>;
+            key-positions = <SPL_KEY 4>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPL PRCNT>;
@@ -97,7 +100,7 @@
         }; 
         l_combo_plus {
             timeout-ms = <COMBO>;
-            key-positions = <17 10>;
+            key-positions = <SPL_KEY 10>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPL PLUS>;
@@ -105,7 +108,7 @@
         };
         l_combo_lbrc {
             timeout-ms = <COMBO>;
-            key-positions = <17 11>;
+            key-positions = <SPL_KEY 11>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPL LBRC>;
@@ -113,7 +116,7 @@
         };
         l_combo_lbkt {
             timeout-ms = <COMBO>;
-            key-positions = <17 12>;
+            key-positions = <SPL_KEY 12>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPL LBKT>;
@@ -121,7 +124,7 @@
         };
         l_combo_lpar {
             timeout-ms = <COMBO>;
-            key-positions = <17 13>;
+            key-positions = <SPL_KEY 13>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPL LPAR>;
@@ -129,7 +132,7 @@
         };
         l_combo_equal {
             timeout-ms = <COMBO>;
-            key-positions = <17 14>;
+            key-positions = <SPL_KEY 14>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPL EQUAL>;
@@ -137,7 +140,7 @@
         };
         l_combo_star {
             timeout-ms = <COMBO>;
-            key-positions = <17 20>;
+            key-positions = <SPL_KEY 20>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPL STAR>;
@@ -145,7 +148,7 @@
         };
         l_combo_hash {
             timeout-ms = <COMBO>;
-            key-positions = <17 21>;
+            key-positions = <SPL_KEY 21>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPL HASH>;
@@ -153,7 +156,7 @@
         };
         l_combo_bslh {
             timeout-ms = <COMBO>;
-            key-positions = <17 22>;
+            key-positions = <SPL_KEY 22>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPL BSLH>;
@@ -161,7 +164,7 @@
         };
         l_combo_fslh {
             timeout-ms = <COMBO>;
-            key-positions = <17 23>;
+            key-positions = <SPL_KEY 23>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPL FSLH>;
@@ -169,7 +172,7 @@
         };
         l_combo_at {
             timeout-ms = <COMBO>;
-            key-positions = <17 24>;
+            key-positions = <SPL_KEY 24>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPL AT>;
@@ -177,25 +180,25 @@
         };
 
 
-        r_combo_amps {
-            timeout-ms = <COMBO>;
-            key-positions = <12 5>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPR AMPS>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
         r_combo_pipe {
             timeout-ms = <COMBO>;
-            key-positions = <12 6>;
+            key-positions = <SPR_KEY 5>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPR PIPE>;
             require-prior-idle-ms = <COMBO_IDLE>;
         };
+        r_combo_amps {
+            timeout-ms = <COMBO>;
+            key-positions = <SPR_KEY 6>;
+            layers = <DEF>;
+            slow-release;
+            bindings = <&mac SPR AMPS>;
+            require-prior-idle-ms = <COMBO_IDLE>;
+        };
         r_combo_under {
             timeout-ms = <COMBO>;
-            key-positions = <12 7>;
+            key-positions = <SPR_KEY 7>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPR UNDER>;
@@ -203,7 +206,7 @@
         };
         r_combo_lt {
             timeout-ms = <COMBO>;
-            key-positions = <12 8>;
+            key-positions = <SPR_KEY 8>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPR LT>;
@@ -211,7 +214,7 @@
         };
         r_combo_gt {
             timeout-ms = <COMBO>;
-            key-positions = <12 9>;
+            key-positions = <SPR_KEY 9>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPR GT>;
@@ -219,7 +222,7 @@
         };
         r_combo_equal {
             timeout-ms = <COMBO>;
-            key-positions = <12 15>;
+            key-positions = <SPR_KEY 15>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPR EQUAL>;
@@ -227,7 +230,7 @@
         };
         r_combo_qmark {
             timeout-ms = <COMBO>;
-            key-positions = <12 18>;
+            key-positions = <SPR_KEY 18>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPR QMARK>;
@@ -235,7 +238,7 @@
         };
         r_combo_minus {
             timeout-ms = <COMBO>;
-            key-positions = <12 19>;
+            key-positions = <SPR_KEY 19>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPR MINUS>;
@@ -243,7 +246,7 @@
         };
         r_combo_dllr {
             timeout-ms = <COMBO>;
-            key-positions = <12 26>;
+            key-positions = <SPR_KEY 26>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPR DLLR>;
@@ -251,7 +254,7 @@
         };
         r_combo_tilde {
             timeout-ms = <COMBO>;
-            key-positions = <12 27>;
+            key-positions = <SPR_KEY 27>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPR TILDE>;
@@ -259,7 +262,7 @@
         };
         r_combo_caret {
             timeout-ms = <COMBO>;
-            key-positions = <12 28>;
+            key-positions = <SPR_KEY 28>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPR CARET>;
@@ -267,7 +270,7 @@
         };
         r_combo_grave {
             timeout-ms = <COMBO>;
-            key-positions = <12 29>;
+            key-positions = <SPR_KEY 29>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac SPR GRAVE>;
@@ -361,7 +364,7 @@
 
         nav_combo_ret {
             timeout-ms = <COMBO>;
-            key-positions = <32 13>;
+            key-positions = <NAV_KEY 13>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac NAV RET>;
@@ -369,7 +372,7 @@
         };
         nav_combo_bspc {
             timeout-ms = <COMBO>;
-            key-positions = <32 12>;
+            key-positions = <NAV_KEY 12>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac NAV BSPC>;
@@ -377,7 +380,7 @@
         };
         nav_combo_tab {
             timeout-ms = <COMBO>;
-            key-positions = <32 23>;
+            key-positions = <NAV_KEY 23>;
             layers = <DEF>;
             slow-release;
             bindings = <&mac NAV TAB>;
