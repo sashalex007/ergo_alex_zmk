@@ -24,7 +24,6 @@
 #define NAV_KEY 32
 
 / { 
-
     macros {
         mac: macro_layer_tap {
             compatible = "zmk,behavior-macro-two-param";
