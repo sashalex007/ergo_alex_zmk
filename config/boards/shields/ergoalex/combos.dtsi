@@ -84,6 +84,6 @@
         COMBO(nav_tab, &clh NAV TAB, NAV_KEY 23)
         
         //quick double quotes
-        COMBO(sft_double_quote, DQT, 19 20)
+        COMBO(sft_double_quote, &kp DQT, 19 20)
     };
 };
