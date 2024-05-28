@@ -1,3 +1,9 @@
+#define DEF 0
+#define NAV 1
+#define SPL 2
+#define SPR 3
+#define NUM 4
+#define SYS 5
 
 #define SPL_KEY 17
 #define SPR_KEY 12
