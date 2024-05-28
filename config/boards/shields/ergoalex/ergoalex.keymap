@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <combos.dtsi>
 
 
 #define XXX &none
@@ -15,13 +16,8 @@
 
 #define TAP 280
 #define IDLE 150
-#define COMBO 40
+#define COMBO 45
 #define COMBO_IDLE 150
-
-#define SPL_KEY 17
-#define SPR_KEY 12
-#define NUM_KEY 16
-#define NAV_KEY 32
 
 / { 
     macros {
@@ -54,374 +50,12 @@
         };  
     };
     
-    combos {
-        compatible = "zmk,combos";
-
-        l_combo_excl {
-            timeout-ms = <COMBO>;
-            key-positions = <SPL_KEY 0>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPL EXCL>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        l_combo_rbrc {
-            timeout-ms = <COMBO>;
-            key-positions = <SPL_KEY 1>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPL RBRC>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        l_combo_rbkt {
-            timeout-ms = <COMBO>;
-            key-positions = <SPL_KEY 2>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPL RBKT>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        l_combo_rpar {
-            timeout-ms = <COMBO>;
-            key-positions = <SPL_KEY 3>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPL RPAR>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        l_combo_prcnt {
-            timeout-ms = <COMBO>;
-            key-positions = <SPL_KEY 4>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPL PRCNT>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        }; 
-        l_combo_plus {
-            timeout-ms = <COMBO>;
-            key-positions = <SPL_KEY 10>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPL PLUS>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        l_combo_lbrc {
-            timeout-ms = <COMBO>;
-            key-positions = <SPL_KEY 11>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPL LBRC>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        l_combo_lbkt {
-            timeout-ms = <COMBO>;
-            key-positions = <SPL_KEY 12>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPL LBKT>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        l_combo_lpar {
-            timeout-ms = <COMBO>;
-            key-positions = <SPL_KEY 13>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPL LPAR>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        l_combo_equal {
-            timeout-ms = <COMBO>;
-            key-positions = <SPL_KEY 14>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPL EQUAL>;
-            require-prior-idle-ms = <COMBO_IDLE>; 
-        };
-        l_combo_star {
-            timeout-ms = <COMBO>;
-            key-positions = <SPL_KEY 20>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPL STAR>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        l_combo_hash {
-            timeout-ms = <COMBO>;
-            key-positions = <SPL_KEY 21>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPL HASH>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        l_combo_bslh {
-            timeout-ms = <COMBO>;
-            key-positions = <SPL_KEY 22>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPL BSLH>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        l_combo_fslh {
-            timeout-ms = <COMBO>;
-            key-positions = <SPL_KEY 23>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPL FSLH>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        l_combo_at {
-            timeout-ms = <COMBO>;
-            key-positions = <SPL_KEY 24>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPL AT>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-
-
-        r_combo_pipe {
-            timeout-ms = <COMBO>;
-            key-positions = <SPR_KEY 5>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPR PIPE>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        r_combo_amps {
-            timeout-ms = <COMBO>;
-            key-positions = <SPR_KEY 6>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPR AMPS>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        r_combo_under {
-            timeout-ms = <COMBO>;
-            key-positions = <SPR_KEY 7>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPR UNDER>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        r_combo_lt {
-            timeout-ms = <COMBO>;
-            key-positions = <SPR_KEY 8>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPR LT>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        r_combo_gt {
-            timeout-ms = <COMBO>;
-            key-positions = <SPR_KEY 9>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPR GT>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        r_combo_equal {
-            timeout-ms = <COMBO>;
-            key-positions = <SPR_KEY 15>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPR EQUAL>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        r_combo_qmark {
-            timeout-ms = <COMBO>;
-            key-positions = <SPR_KEY 18>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPR QMARK>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        r_combo_minus {
-            timeout-ms = <COMBO>;
-            key-positions = <SPR_KEY 19>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPR MINUS>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        r_combo_dllr {
-            timeout-ms = <COMBO>;
-            key-positions = <SPR_KEY 26>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPR DLLR>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        r_combo_tilde {
-            timeout-ms = <COMBO>;
-            key-positions = <SPR_KEY 27>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPR TILDE>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        r_combo_caret {
-            timeout-ms = <COMBO>;
-            key-positions = <SPR_KEY 28>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPR CARET>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        r_combo_grave {
-            timeout-ms = <COMBO>;
-            key-positions = <SPR_KEY 29>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPR GRAVE>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        
-
-
-        r_combo_five {
-            timeout-ms = <COMBO>;
-            key-positions = <NUM_KEY 0>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac NUM N5>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        r_combo_six {
-            timeout-ms = <COMBO>;
-            key-positions = <NUM_KEY 1>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac NUM N6>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        r_combo_seven {
-            timeout-ms = <COMBO>;
-            key-positions = <NUM_KEY 2>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac NUM N7>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        r_combo_eight {
-            timeout-ms = <COMBO>;
-            key-positions = <NUM_KEY 3>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac NUM N8>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        r_combo_nine {
-            timeout-ms = <COMBO>;
-            key-positions = <NUM_KEY 4>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac NUM N9>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        r_combo_zero {
-            timeout-ms = <COMBO>;
-            key-positions = <NUM_KEY 10>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac NUM N0>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        r_combo_one {
-            timeout-ms = <COMBO>;
-            key-positions = <NUM_KEY 11>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac NUM N1>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        r_combo_two {
-            timeout-ms = <COMBO>;
-            key-positions = <NUM_KEY 12>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac NUM N2>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        r_combo_three {
-            timeout-ms = <COMBO>;
-            key-positions = <NUM_KEY 13>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac NUM N3>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        r_combo_four {
-            timeout-ms = <COMBO>;
-            key-positions = <NUM_KEY 14>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac NUM N4>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-
-
-
-        nav_combo_ret {
-            timeout-ms = <COMBO>;
-            key-positions = <NAV_KEY 13>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac NAV RET>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        nav_combo_bspc {
-            timeout-ms = <COMBO>;
-            key-positions = <NAV_KEY 12>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac NAV BSPC>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-        nav_combo_tab {
-            timeout-ms = <COMBO>;
-            key-positions = <NAV_KEY 23>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac NAV TAB>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
-
-
-        sft_combo_double_quote {
-            timeout-ms = <COMBO>;
-            key-positions = <19 20>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac2 RSHFT SQT>;
-        };
-    };
-
-
-
     behaviors {
         colon: colon {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp COLON>, <&kp SEMI>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        hl: home_row_mod_left {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <150>;
-            bindings = <&mo>, <&kp>;
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31>; 
-        };
-
-        hr: home_row_mod_right {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <150>;
-            bindings = <&mo>, <&kp>;
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 32 33>; 
         };
 
         sft: shift {
@@ -440,7 +74,7 @@
             bindings = <&mo>, <&kp>;
         };
 
-        hl2: home_row_mod_left_timeless {
+        hr: home_row_mod_right_timeless {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
@@ -450,7 +84,7 @@
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31>; 
         };
 
-        hr2: home_row_mod_right_timeless {
+        hl: home_row_mod_left_timeless {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
@@ -468,7 +102,7 @@
         default_layer {
             bindings = <
                 &colon        &kp COMMA     &kp DOT  &kp P               &kp Y                    &kp F         &kp G        &kp C  &kp R         &kp L
-                &sft LSHFT A  &hr2 LMETA O  &kp E    &hr2 LALT U         &hr2 LCTRL I             &hl2 RCTRL D  &hl2 RALT H  &kp T  &hl2 RMETA N  &sft RSHFT S
+                &sft LSHFT A  &hl LMETA O   &kp E    &hl LALT U          &hl LCTRL I              &hr RCTRL D   &hr RALT H   &kp T  &hr RMETA N  &sft RSHFT S
                 &kp SQT       &kp Q         &kp J    &kp K               &kp X                    &kp B         &kp M        &kp W  &kp V         &kp Z
                                                      &sys SYS LG(SPACE)  &kp SPACE                &mo NAV       &mo NUM
             >;
