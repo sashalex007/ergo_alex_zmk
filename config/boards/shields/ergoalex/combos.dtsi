@@ -1,7 +1,11 @@
+
 #define SPL_KEY 17
 #define SPR_KEY 12
 #define NUM_KEY 16
 #define NAV_KEY 32
+
+#define COMBO 45
+#define COMBO_IDLE 150
 
 / {   
     combos {

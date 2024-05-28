@@ -16,8 +16,6 @@
 
 #define TAP 280
 #define IDLE 150
-#define COMBO 45
-#define COMBO_IDLE 150
 
 / { 
     macros {
