@@ -19,7 +19,7 @@
 
 / { 
     macros {
-        mac: macro_layer_tap {
+        clh: combo_layer_hybrid {
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
             bindings
@@ -32,20 +32,6 @@
                 , <&macro_release &mo MACRO_PLACEHOLDER>
                 ;
         };
-
-        mac2: macro_press_tap {
-            compatible = "zmk,behavior-macro-two-param";
-            #binding-cells = <2>;
-            bindings
-                = <&macro_param_1to1>
-                , <&macro_press &kp MACRO_PLACEHOLDER>
-                , <&macro_param_2to1>
-                , <&macro_tap &kp MACRO_PLACEHOLDER>
-                , <&macro_pause_for_release>
-                , <&macro_param_1to1>
-                , <&macro_release &kp MACRO_PLACEHOLDER>
-                ;
-        };  
     };
     
     behaviors {
