@@ -5,6 +5,15 @@
 #define NUM 4
 #define SYS 5
 
+/*                KEY POSITIONS
+
+  ╭────────────────────╮ ╭────────────────────╮
+  │  0   1   2   3   4 │ │  5   6   7   8   9 │
+  │ 10  11  12  13  14 │ │ 15  16  17  18  19 │
+  │ 20  21  22  23  24 │ │ 25  26  27  28  29 │
+  ╰───────────╮ 30  31 │ │ 32  33 ╭───────────╯
+              ╰────────╯ ╰────────╯            */
+              
 #define SPL_KEY 17
 #define SPR_KEY 12
 #define NUM_KEY 16
@@ -13,18 +22,31 @@
 #define COMBO 45
 #define COMBO_IDLE 150
 
+#define ZMK_COMBO(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <DEF>; \
+    timeout-ms = <COMBO>; \
+    require-prior-idle-ms = <COMBO_IDLE>; \
+    slow-release; \
+  };
+
 / {   
     combos {
         compatible = "zmk,combos";
 
-        l_combo_excl {
-            timeout-ms = <COMBO>;
-            key-positions = <SPL_KEY 0>;
-            layers = <DEF>;
-            slow-release;
-            bindings = <&mac SPL EXCL>;
-            require-prior-idle-ms = <COMBO_IDLE>;
-        };
+        ZMK_COMBO(l_excl, &mac SPL EXCL, SPL_KEY 0)
+
+        // l_combo_excl {
+        //     timeout-ms = <COMBO>;
+        //     key-positions = <SPL_KEY 0>;
+        //     layers = <DEF>;
+        //     slow-release;
+        //     bindings = <&mac SPL EXCL>;
+        //     require-prior-idle-ms = <COMBO_IDLE>;
+        // };
+
         l_combo_rbrc {
             timeout-ms = <COMBO>;
             key-positions = <SPL_KEY 1>;
