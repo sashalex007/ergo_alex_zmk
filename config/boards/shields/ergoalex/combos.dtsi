@@ -39,7 +39,14 @@
 / {   
     combos {
         compatible = "zmk,combos";
-        //left hand symbols
+
+        /*              left hand symbols
+        ╭────────────────────╮ ╭────────────────────╮ 
+        │  !   }   ]   )   % │ │ __  __  __  __  __ │  
+        │  +   {   [   (   = │ │ __  __  XX  __  __ │
+        │  *   #   \   /   @ │ │ __  __  __  __  __ │
+        ╰───────────╮  __ __ │ │ __  __ ╭───────────╯
+                    ╰────────╯ ╰────────╯            */
         COMBO(l_excl, &clh SPL EXCL, SPL_KEY 0)
         COMBO(l_rbrc, &clh SPL RBRC, SPL_KEY 1)
         COMBO(l_rbkt, &clh SPL RBKT, SPL_KEY 2)
@@ -55,8 +62,14 @@
         COMBO(l_bslh, &clh SPL BSLH, SPL_KEY 22)
         COMBO(l_fslh, &clh SPL FSLH, SPL_KEY 23)
         COMBO(l_at, &clh SPL AT, SPL_KEY 24)
-        
-        //right hand symbols
+
+        /*             right hand symbols
+        ╭────────────────────╮ ╭────────────────────╮
+        │ __  __  __  __  __ │ │ |   &   _   <   >  │
+        │ __  __  __  XX  __ │ │ =   __  __  ?   -  │
+        │ __  __  __  __  __ │ │ __  $   ~   ^   `  │
+        ╰───────────╮  __ __ │ │ __  __ ╭───────────╯
+                    ╰────────╯ ╰────────╯            */
         COMBO(r_pipe, &clh SPR PIPE, SPR_KEY 5)
         COMBO(r_amps, &clh SPR AMPS, SPR_KEY 6)
         COMBO(r_under, &clh SPR UNDER, SPR_KEY 7)
@@ -69,8 +82,14 @@
         COMBO(r_tilde, &clh SPR TILDE, SPR_KEY 27)
         COMBO(r_caret, &clh SPR CARET, SPR_KEY 28)
         COMBO(r_grave, &clh SPR GRAVE, SPR_KEY 29)
-        
-        //numbers
+
+        /*              numbers
+        ╭────────────────────╮ ╭────────────────────╮
+        │  5   6   7   8   9 │ │ __  __  __  __  __ │
+        │  0   1   2   3   4 │ │ __  XX  __  __  __ │
+        │ __  __  __  __  __ │ │ __  __  __  __  __ │
+        ╰───────────╮  __ __ │ │ __  __ ╭───────────╯
+                    ╰────────╯ ╰────────╯            */
         COMBO(l_five, &clh NUM N5, NUM_KEY 0)
         COMBO(l_six, &clh NUM N6, NUM_KEY 1)
         COMBO(l_seven, &clh NUM N7, NUM_KEY 2)
