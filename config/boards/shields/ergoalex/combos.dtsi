@@ -1,27 +1,22 @@
+
+//layers
 #define DEF 0
 #define NAV 1
 #define SPL 2
 #define SPR 3
 #define NUM 4
-#define SYS 5
-
-/*                KEY POSITIONS
-
-  ╭────────────────────╮ ╭────────────────────╮
-  │  0   1   2   3   4 │ │  5   6   7   8   9 │
-  │ 10  11  12  13  14 │ │ 15  16  17  18  19 │
-  │ 20  21  22  23  24 │ │ 25  26  27  28  29 │
-  ╰───────────╮ 30  31 │ │ 32  33 ╭───────────╯
-              ╰────────╯ ╰────────╯            */
               
+//pseudo-mod-keys
 #define SPL_KEY 17
 #define SPR_KEY 12
 #define NUM_KEY 16
 #define NAV_KEY 32
 
+//timing
 #define COMBO_TAP 45
 #define COMBO_IDLE 150
 
+//make combo
 #define COMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
     bindings = <BINDINGS>; \
@@ -31,6 +26,15 @@
     require-prior-idle-ms = <COMBO_IDLE>; \
     slow-release; \
   };
+
+
+  /*                KEY POSITIONS
+  ╭────────────────────╮ ╭────────────────────╮
+  │  0   1   2   3   4 │ │  5   6   7   8   9 │
+  │ 10  11  12  13  14 │ │ 15  16  17  18  19 │
+  │ 20  21  22  23  24 │ │ 25  26  27  28  29 │
+  ╰───────────╮ 30  31 │ │ 32  33 ╭───────────╯
+              ╰────────╯ ╰────────╯            */
 
 / {   
     combos {
@@ -67,23 +71,23 @@
         COMBO(r_grave, &clh SPR GRAVE, SPR_KEY 29)
         
         //numbers
-        COMBO(r_five, &clh NUM N5, NUM_KEY 0)
-        COMBO(r_six, &clh NUM N6, NUM_KEY 1)
-        COMBO(r_seven, &clh NUM N7, NUM_KEY 2)
-        COMBO(r_eight, &clh NUM N8, NUM_KEY 3)
-        COMBO(r_nine, &clh NUM N9, NUM_KEY 4)
-        COMBO(r_zero, &clh NUM N0, NUM_KEY 10)
-        COMBO(r_one, &clh NUM N1, NUM_KEY 11)
-        COMBO(r_two, &clh NUM N2, NUM_KEY 12)
-        COMBO(r_three, &clh NUM N3, NUM_KEY 13)
-        COMBO(r_four, &clh NUM N4, NUM_KEY 14)
+        COMBO(l_five, &clh NUM N5, NUM_KEY 0)
+        COMBO(l_six, &clh NUM N6, NUM_KEY 1)
+        COMBO(l_seven, &clh NUM N7, NUM_KEY 2)
+        COMBO(l_eight, &clh NUM N8, NUM_KEY 3)
+        COMBO(l_nine, &clh NUM N9, NUM_KEY 4)
+        COMBO(l_zero, &clh NUM N0, NUM_KEY 10)
+        COMBO(l_one, &clh NUM N1, NUM_KEY 11)
+        COMBO(l_two, &clh NUM N2, NUM_KEY 12)
+        COMBO(l_three, &clh NUM N3, NUM_KEY 13)
+        COMBO(l_four, &clh NUM N4, NUM_KEY 14)
 
-        //quick nav combos
+        //fast nav combos
         COMBO(nav_ret, &clh NAV RET, NAV_KEY 13)
         COMBO(nav_bspc, &clh NAV BSPC, NAV_KEY 12)
         COMBO(nav_tab, &clh NAV TAB, NAV_KEY 23)
         
-        //quick double quotes
-        COMBO(sft_double_quote, &kp DQT, 19 20)
+        //fast double quotes
+        COMBO(double_quote, &kp DQT, 19 20)
     };
 };

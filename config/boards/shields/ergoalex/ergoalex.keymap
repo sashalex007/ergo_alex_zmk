@@ -35,29 +35,6 @@
     };
     
     behaviors {
-        colon: colon {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp COLON>, <&kp SEMI>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        sft: shift {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <150>;
-            bindings = <&kp>, <&kp>; 
-        };
-
-        sys: system {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <250>;
-            bindings = <&mo>, <&kp>;
-        };
-
         hr: home_row_mod_right_timeless {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -67,7 +44,6 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31>; 
         };
-
         hl: home_row_mod_left_timeless {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -77,7 +53,26 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 32 33>; 
         };
-
+        colon: colon {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp COLON>, <&kp SEMI>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        sft: shift {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&kp>, <&kp>; 
+        };
+        sys: system {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <250>;
+            bindings = <&mo>, <&kp>;
+        };
     };
 
     keymap {
@@ -118,9 +113,7 @@
                 ___  ___  ___  ___  ___     ___        &kp DLLR  &kp TILDE  &kp CARET  &kp GRAVE
                                ___  ___     ___        ___
             >;
-        };
-        
-        
+        };  
 
         num_layer {
             bindings = <
