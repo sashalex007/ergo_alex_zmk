@@ -90,10 +90,10 @@
 
         nav_layer {
             bindings = <
-            &kp ESC         &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(FSLH)       &kp PG_UP     &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  ___
-            &kp LSHFT       &kp LG(Z)  &kp BSPC   &kp RET    ___                &kp LG(LEFT)  &kp LEFT      &kp DOWN  &kp RIGHT      &kp LG(RIGHT)
-            &kp LG(LS(N4))  ___        ___        &kp TAB    ___                &kp PG_DN     ___           ___       ___            ___
-                                                  ___        ___                ___           ___   
+            &kp ESC    &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(FSLH)       &kp PG_UP     &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  ___
+            &kp LSHFT  XXX        &kp BSPC   &kp RET    ___                &kp LG(LEFT)  &kp LEFT      &kp DOWN  &kp RIGHT      &kp LG(RIGHT)
+            XXX        XXX        XXX        &kp TAB    &kp LG(LS(N4))     &kp PG_DN     ___           ___       ___            ___
+                                             ___        ___                ___           ___   
             >;
         };
 
