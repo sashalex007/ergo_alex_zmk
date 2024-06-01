@@ -13,17 +13,20 @@
 #define NAV_KEY 32
 
 //timing
-#define COMBO_TAP 45
-#define COMBO_IDLE 150
+#define FAST_TAP 45
+#define FAST_IDLE 150
+
+#define SLOW_TAP 60
+#define SLOW_IDLE 50
 
 //make combo
-#define COMBO(NAME, BINDINGS, KEYPOS) \
+#define COMBO(NAME, BINDINGS, KEYPOS, TAP, IDLE) \
   combo_##NAME { \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <DEF>; \
-    timeout-ms = <COMBO_TAP>; \
-    require-prior-idle-ms = <COMBO_IDLE>; \
+    timeout-ms = <TAP>; \
+    require-prior-idle-ms = <IDLE>; \
     slow-release; \
   };
 
@@ -47,21 +50,21 @@
         │  *   #   \   /   @ │ │ __  __  __  __  __ │
         ╰───────────╮  __ __ │ │ __  __ ╭───────────╯
                     ╰────────╯ ╰────────╯            */
-        COMBO(l_excl, &clh SPL EXCL, SPL_KEY 0)
-        COMBO(l_rbrc, &clh SPL RBRC, SPL_KEY 1)
-        COMBO(l_rbkt, &clh SPL RBKT, SPL_KEY 2)
-        COMBO(l_rpar, &clh SPL RPAR, SPL_KEY 3)
-        COMBO(l_prcnt, &clh SPL PRCNT, SPL_KEY 4)
-        COMBO(l_plus, &clh SPL PLUS, SPL_KEY 10)
-        COMBO(l_lbrc, &clh SPL LBRC, SPL_KEY 11)
-        COMBO(l_lbkt, &clh SPL LBKT, SPL_KEY 12)
-        COMBO(l_lpar, &clh SPL LPAR, SPL_KEY 13)
-        COMBO(l_equal, &clh SPL EQUAL, SPL_KEY 14)
-        COMBO(l_star, &clh SPL STAR, SPL_KEY 20)
-        COMBO(l_hash, &clh SPL HASH, SPL_KEY 21)
-        COMBO(l_bslh, &clh SPL BSLH, SPL_KEY 22)
-        COMBO(l_fslh, &clh SPL FSLH, SPL_KEY 23)
-        COMBO(l_at, &clh SPL AT, SPL_KEY 24)
+        COMBO(l_excl, &clh SPL EXCL, SPL_KEY 0, SLOW_TAP, SLOW_IDLE)
+        COMBO(l_rbrc, &clh SPL RBRC, SPL_KEY 1, SLOW_TAP, SLOW_IDLE)
+        COMBO(l_rbkt, &clh SPL RBKT, SPL_KEY 2, SLOW_TAP, SLOW_IDLE)
+        COMBO(l_rpar, &clh SPL RPAR, SPL_KEY 3, SLOW_TAP, SLOW_IDLE)
+        COMBO(l_prcnt, &clh SPL PRCNT, SPL_KEY 4, SLOW_TAP, SLOW_IDLE)
+        COMBO(l_plus, &clh SPL PLUS, SPL_KEY 10, FAST_TAP, FAST_IDLE)
+        COMBO(l_lbrc, &clh SPL LBRC, SPL_KEY 11, FAST_TAP, FAST_IDLE)
+        COMBO(l_lbkt, &clh SPL LBKT, SPL_KEY 12, FAST_TAP, FAST_IDLE)
+        COMBO(l_lpar, &clh SPL LPAR, SPL_KEY 13, FAST_TAP, FAST_IDLE)
+        COMBO(l_equal, &clh SPL EQUAL, SPL_KEY 14, FAST_TAP, FAST_IDLE)
+        COMBO(l_star, &clh SPL STAR, SPL_KEY 20, SLOW_TAP, SLOW_IDLE)
+        COMBO(l_hash, &clh SPL HASH, SPL_KEY 21, SLOW_TAP, SLOW_IDLE)
+        COMBO(l_bslh, &clh SPL BSLH, SPL_KEY 22, SLOW_TAP, SLOW_IDLE)
+        COMBO(l_fslh, &clh SPL FSLH, SPL_KEY 23, SLOW_TAP, SLOW_IDLE)
+        COMBO(l_at, &clh SPL AT, SPL_KEY 24, SLOW_TAP, SLOW_IDLE)
 
         /*             right hand symbols
         ╭────────────────────╮ ╭────────────────────╮
@@ -70,18 +73,18 @@
         │ __  __  __  __  __ │ │ __  $   ~   ^   `  │
         ╰───────────╮  __ __ │ │ __  __ ╭───────────╯
                     ╰────────╯ ╰────────╯            */
-        COMBO(r_pipe, &clh SPR PIPE, SPR_KEY 5)
-        COMBO(r_amps, &clh SPR AMPS, SPR_KEY 6)
-        COMBO(r_under, &clh SPR UNDER, SPR_KEY 7)
-        COMBO(r_lt, &clh SPR LT, SPR_KEY 8)
-        COMBO(r_gt, &clh SPR GT, SPR_KEY 9)
-        COMBO(r_equal, &clh SPR EQUAL, SPR_KEY 15)
-        COMBO(r_qmark, &clh SPR QMARK, SPR_KEY 18)
-        COMBO(r_minus, &clh SPR MINUS, SPR_KEY 19)
-        COMBO(r_dllr, &clh SPR DLLR, SPR_KEY 26)
-        COMBO(r_tilde, &clh SPR TILDE, SPR_KEY 27)
-        COMBO(r_caret, &clh SPR CARET, SPR_KEY 28)
-        COMBO(r_grave, &clh SPR GRAVE, SPR_KEY 29)
+        COMBO(r_pipe, &clh SPR PIPE, SPR_KEY 5, SLOW_TAP, SLOW_IDLE)
+        COMBO(r_amps, &clh SPR AMPS, SPR_KEY 6, SLOW_TAP, SLOW_IDLE)
+        COMBO(r_under, &clh SPR UNDER, SPR_KEY 7, SLOW_TAP, SLOW_IDLE)
+        COMBO(r_lt, &clh SPR LT, SPR_KEY 8, SLOW_TAP, SLOW_IDLE)
+        COMBO(r_gt, &clh SPR GT, SPR_KEY 9, SLOW_TAP, SLOW_IDLE)
+        COMBO(r_equal, &clh SPR EQUAL, SPR_KEY 15, FAST_TAP, FAST_IDLE)
+        COMBO(r_qmark, &clh SPR QMARK, SPR_KEY 18, FAST_TAP, FAST_IDLE)
+        COMBO(r_minus, &clh SPR MINUS, SPR_KEY 19, FAST_TAP, FAST_IDLE)
+        COMBO(r_dllr, &clh SPR DLLR, SPR_KEY 26, SLOW_TAP, SLOW_IDLE)
+        COMBO(r_tilde, &clh SPR TILDE, SPR_KEY 27, SLOW_TAP, SLOW_IDLE)
+        COMBO(r_caret, &clh SPR CARET, SPR_KEY 28, SLOW_TAP, SLOW_IDLE)
+        COMBO(r_grave, &clh SPR GRAVE, SPR_KEY 29, SLOW_TAP, SLOW_IDLE)
 
         /*              numbers
         ╭────────────────────╮ ╭────────────────────╮
@@ -90,23 +93,23 @@
         │ __  __  __  __  __ │ │ __  __  __  __  __ │
         ╰───────────╮  __ __ │ │ __  __ ╭───────────╯
                     ╰────────╯ ╰────────╯            */
-        COMBO(l_five, &clh NUM N5, NUM_KEY 0)
-        COMBO(l_six, &clh NUM N6, NUM_KEY 1)
-        COMBO(l_seven, &clh NUM N7, NUM_KEY 2)
-        COMBO(l_eight, &clh NUM N8, NUM_KEY 3)
-        COMBO(l_nine, &clh NUM N9, NUM_KEY 4)
-        COMBO(l_zero, &clh NUM N0, NUM_KEY 10)
-        COMBO(l_one, &clh NUM N1, NUM_KEY 11)
-        COMBO(l_two, &clh NUM N2, NUM_KEY 12)
-        COMBO(l_three, &clh NUM N3, NUM_KEY 13)
-        COMBO(l_four, &clh NUM N4, NUM_KEY 14)
+        COMBO(l_five, &clh NUM N5, NUM_KEY 0, SLOW_TAP, SLOW_IDLE)
+        COMBO(l_six, &clh NUM N6, NUM_KEY 1, SLOW_TAP, SLOW_IDLE)
+        COMBO(l_seven, &clh NUM N7, NUM_KEY 2, SLOW_TAP, SLOW_IDLE)
+        COMBO(l_eight, &clh NUM N8, NUM_KEY 3, SLOW_TAP, SLOW_IDLE)
+        COMBO(l_nine, &clh NUM N9, NUM_KEY 4, SLOW_TAP, SLOW_IDLE)
+        COMBO(l_zero, &clh NUM N0, NUM_KEY 10, FAST_TAP, FAST_IDLE)
+        COMBO(l_one, &clh NUM N1, NUM_KEY 11, FAST_TAP, FAST_IDLE)
+        COMBO(l_two, &clh NUM N2, NUM_KEY 12, FAST_TAP, FAST_IDLE)
+        COMBO(l_three, &clh NUM N3, NUM_KEY 13, FAST_TAP, FAST_IDLE)
+        COMBO(l_four, &clh NUM N4, NUM_KEY 14, FAST_TAP, FAST_IDLE)
 
         //fast nav combos
-        COMBO(nav_ret, &clh NAV RET, NAV_KEY 13)
-        COMBO(nav_bspc, &clh NAV BSPC, NAV_KEY 12)
-        COMBO(nav_tab, &clh NAV TAB, NAV_KEY 23)
+        COMBO(nav_ret, &clh NAV RET, NAV_KEY 13, SLOW_TAP, SLOW_IDLE)
+        COMBO(nav_bspc, &clh NAV BSPC, NAV_KEY 12, SLOW_TAP, SLOW_IDLE)
+        COMBO(nav_tab, &clh NAV TAB, NAV_KEY 23, SLOW_TAP, SLOW_IDLE)
         
         //fast double quotes
-        COMBO(double_quote, &kp DQT, 19 20)
+        COMBO(double_quote, &kp DQT, 19 20, SLOW_TAP, SLOW_IDLE)
     };
 };
