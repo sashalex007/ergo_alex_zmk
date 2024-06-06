@@ -108,6 +108,11 @@
         COMBO(nav_ret, &clh NAV RET, NAV_KEY 13, SLOW_TAP, SLOW_IDLE)
         COMBO(nav_bspc, &clh NAV BSPC, NAV_KEY 12, SLOW_TAP, SLOW_IDLE)
         COMBO(nav_tab, &clh NAV TAB, NAV_KEY 23, SLOW_TAP, SLOW_IDLE)
+
+        COMBO(nav_tab, &clh NAV ESC, NAV_KEY 0, SLOW_TAP, SLOW_IDLE)
+        COMBO(nav_tab, &clh NAV LG(X), NAV_KEY 1, SLOW_TAP, SLOW_IDLE)
+        COMBO(nav_tab, &clh NAV LG(C), NAV_KEY 2, SLOW_TAP, SLOW_IDLE)
+        COMBO(nav_tab, &clh NAV LG(V), NAV_KEY 3, SLOW_TAP, SLOW_IDLE)
         
         //fast double quotes
         COMBO(double_quote, &kp DQT, 19 20, SLOW_TAP, SLOW_IDLE)

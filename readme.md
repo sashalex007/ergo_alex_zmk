@@ -36,4 +36,7 @@ If you are here for the combo-layer hybrid implementation, jump to [keymap](http
 │ __  __  __  tab __  │ │ pdn __  __  __ __  │
 ╰───────────╮  __ __  │ │ XX  __ ╭───────────╯
             ╰─────────╯ ╰────────╯ 
+
+XX = modifer
+cmt = code comment
 ```

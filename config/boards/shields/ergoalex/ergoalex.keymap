@@ -80,10 +80,10 @@
 
         default_layer {
             bindings = <
-                &colon        &kp COMMA     &kp DOT  &kp P               &kp Y                    &kp F         &kp G        &kp C  &kp R         &kp L
-                &sft LSHFT A  &hl LMETA O   &kp E    &hl LALT U          &hl LCTRL I              &hr RCTRL D   &hr RALT H   &kp T  &hr RMETA N  &sft RSHFT S
-                &kp SQT       &kp Q         &kp J    &kp K               &kp X                    &kp B         &kp M        &kp W  &kp V         &kp Z
-                                                     &sys SYS LG(SPACE)  &kp SPACE                &mo NAV       &mo SYS
+                &colon        &kp COMMA     &kp DOT  &kp P                &kp Y                    &kp F         &kp G        &kp C  &kp R         &kp L
+                &sft LSHFT A  &hl LMETA O   &kp E    &hl LALT U           &hl LCTRL I              &hr RCTRL D   &hr RALT H   &kp T  &hr RMETA N  &sft RSHFT S
+                &kp SQT       &kp Q         &kp J    &kp K                &kp X                    &kp B         &kp M        &kp W  &kp V         &kp Z
+                                                     &sys SYS LG(LS(N4))  &kp SPACE                &mo NAV       &mo SYS
             >;
         };
 
@@ -92,7 +92,7 @@
             bindings = <
             &kp ESC    &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(FSLH)       &kp PG_UP     &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  ___
             &kp LSHFT  XXX        &kp BSPC   &kp RET    ___                &kp LG(LEFT)  &kp LEFT      &kp DOWN  &kp RIGHT      &kp LG(RIGHT)
-            XXX        XXX        XXX        &kp TAB    &kp LG(LS(N4))     &kp PG_DN     ___           ___       ___            ___
+            XXX        XXX        XXX        &kp TAB    ___                &kp PG_DN     ___           ___       ___            ___
                                              ___        ___                ___           ___   
             >;
         };
