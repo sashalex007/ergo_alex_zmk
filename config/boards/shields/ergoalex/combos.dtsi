@@ -13,11 +13,11 @@
 #define NAV_KEY 32
 
 //timing
-#define FAST_TAP 18
+#define FAST_TAP 45
 #define FAST_IDLE 150
 
-#define SLOW_TAP 30
-#define SLOW_IDLE 50
+#define SLOW_TAP 60
+#define SLOW_IDLE 150
 
 //make combo
 #define COMBO(NAME, BINDINGS, KEYPOS, TAP, IDLE) \
@@ -112,7 +112,7 @@
         COMBO(nav_esc, &clh NAV ESC, NAV_KEY 0, SLOW_TAP, SLOW_IDLE)
         COMBO(nav_cut, &clh NAV LG(X), NAV_KEY 1, SLOW_TAP, SLOW_IDLE)
         COMBO(nav_copy, &clh NAV LG(C), NAV_KEY 2, SLOW_TAP, SLOW_IDLE)
-        COMBO(nav_paste, &clh NAV LG(V), NAV_KEY 3, SLOW_TAP, SLOW_IDLE)
+        COMBO(nav_pas, &clh NAV LG(V), NAV_KEY 3, SLOW_TAP, SLOW_IDLE)
         
         //fast double quotes
         COMBO(double_quote, &kp DQT, 19 20, SLOW_TAP, SLOW_IDLE)
