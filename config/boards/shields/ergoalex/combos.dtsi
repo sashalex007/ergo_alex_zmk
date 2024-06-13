@@ -13,10 +13,10 @@
 #define NAV_KEY 32
 
 //timing
-#define FAST_TAP 45
+#define FAST_TAP 18
 #define FAST_IDLE 150
 
-#define SLOW_TAP 60
+#define SLOW_TAP 30
 #define SLOW_IDLE 50
 
 //make combo
