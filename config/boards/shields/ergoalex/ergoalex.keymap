@@ -80,56 +80,62 @@
 
         default_layer {
             bindings = <
+                &kp N1        &kp N2        &kp N3   &kp N4               &kp N5                   &kp N6        &kp N7       &kp N8 &kp N9        &kp N0
                 &colon        &kp COMMA     &kp DOT  &kp P                &kp Y                    &kp F         &kp G        &kp C  &kp R         &kp L
                 &sft LSHFT A  &hl LMETA O   &kp E    &hl LALT U           &hl LCTRL I              &hr RCTRL D   &hr RALT H   &kp T  &hr RMETA N  &sft RSHFT S
                 &kp SQT       &kp Q         &kp J    &kp K                &kp X                    &kp B         &kp M        &kp W  &kp V         &kp Z
-                                                     &sys SYS LG(LS(N4))  &kp SPACE                &mo NAV       &mo SYS
+                                            ___      &sys SYS LG(LS(N4))  &kp SPACE                &mo NAV       &mo SYS      ___
             >;
         };
 
 
         nav_layer {
             bindings = <
+            ___        ___        ___        ___        ___                ___           ___           ___       ___            ___
             &kp ESC    &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(FSLH)       &kp PG_UP     &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  ___
             &kp LSHFT  XXX        &kp BSPC   &kp RET    ___                &kp LG(LEFT)  &kp LEFT      &kp DOWN  &kp RIGHT      &kp LG(RIGHT)
             XXX        XXX        XXX        &kp TAB    ___                &kp PG_DN     ___           ___       ___            ___
-                                             ___        ___                ___           ___   
+                                  ___        ___        ___                ___           ___           ___
             >;
         };
 
         spl_layer {
             bindings = <
+                ___       ___       ___       ___       ___           ___  ___  ___  ___  ___
                 &kp EXCL  &kp RBRC  &kp RBKT  &kp RPAR  &kp PRCNT     ___  ___  ___  ___  ___
                 &kp PLUS  &kp LBRC  &kp LBKT  &kp LPAR  &kp EQUAL     ___  ___  ___  ___  ___
                 &kp STAR  &kp HASH  &kp BSLH  &kp FSLH  &kp AT        ___  ___  ___  ___  ___
-                                              ___       ___           ___  ___
+                                    ___       ___       ___           ___  ___  ___
             >;
         };
 
         spr_layer {
             bindings = <
+                ___  ___  ___  ___  ___     ___        ___       ___        ___        ___
                 ___  ___  ___  ___  ___     &kp AMPS   &kp PIPE  &kp UNDER  &kp LT     &kp GT
                 ___  ___  ___  ___  ___     &kp EQUAL  ___       ___        &kp QMARK  &kp MINUS
                 ___  ___  ___  ___  ___     ___        &kp DLLR  &kp TILDE  &kp CARET  &kp GRAVE
-                               ___  ___     ___        ___
+                          ___  ___  ___     ___        ___       ___
             >;
         };  
 
         num_layer {
             bindings = <
+                ___     ___     ___      ___     ___        ___  ___  ___  ___  ___
                 &kp N5  &kp N6  &kp N7   &kp N8  &kp N9     ___  ___  ___  ___  ___
                 &kp N0  &kp N1  &kp N2   &kp N3  &kp N4     ___  ___  ___  ___  ___
                 ___     ___     ___      ___     ___        ___  ___  ___  ___  ___
-                                         ___     ___        ___  ___
+                                ___      ___     ___        ___  ___  ___
             >;
         };
 
         sys_layer {
             bindings = <
+                ___           ___           ___           ___           ___               ___          ___  ___  ___  ___
                 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      ___          ___  ___  ___  ___
                 XXX           XXX           XXX           XXX           &sys_reset        &sys_reset   ___  ___  ___  ___
                 &bt BT_CLR    XXX           XXX           XXX           &bootloader       &bootloader  ___  ___  ___  ___
-                                                          XXX           XXX               ___          ___ 
+                                            ___           XXX           XXX               ___          ___  ___
             >;
         };
 
@@ -138,7 +144,8 @@
                 ___  ___  ___  ___  ___     ___  ___  ___  ___  ___
                 ___  ___  ___  ___  ___     ___  ___  ___  ___  ___
                 ___  ___  ___  ___  ___     ___  ___  ___  ___  ___
-                               ___  ___     ___  ___
+                ___  ___  ___  ___  ___     ___  ___  ___  ___  ___
+                          ___  ___  ___     ___  ___  ___
             >;
         };
         
