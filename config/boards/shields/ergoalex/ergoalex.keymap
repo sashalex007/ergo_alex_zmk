@@ -150,7 +150,9 @@
                                             &kp SPACE  &kp LSHFT   &sys SYS LG(LS(N4))      &mo SYS       &kp RSHFT   &mo NAV
             >;
         };
+        
 
+    
 
         nav_layer {
             bindings = <
