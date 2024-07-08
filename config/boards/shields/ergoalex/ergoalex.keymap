@@ -59,6 +59,69 @@
             bindings = <&kp COLON>, <&kp SEMI>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+
+        one: one {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT>, <&kp N1>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        two: two {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LBRC>, <&kp N2>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        three: three {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RBRC>, <&kp N3>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        four: four {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR>, <&kp N4>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        five: five {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL>, <&kp N5>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        six: six {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp STAR>, <&kp N6>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        seven: seven {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RPAR>, <&kp N7>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        eight: eight {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PLUS>, <&kp N8>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        nine: nine {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp EXCL>, <&kp N9>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        zero: zero {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RBKT>, <&kp N0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
         sft: shift {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -80,9 +143,9 @@
 
         default_layer {
             bindings = <
-                &kp N1        &kp N2        &kp N3     &kp N4      &kp N5                   &kp N6        &kp N7       &kp N8 &kp N9        &kp N0
+                &one          &two          &three     &four       &five                    &six          &seven       &eight &nine         &zero
                 &colon        &kp COMMA     &kp DOT    &kp P       &kp Y                    &kp F         &kp G        &kp C  &kp R         &kp L
-                &sft LSHFT A  &hl LMETA O   &kp E      &hl LALT U  &hl LCTRL I              &hr RCTRL D   &hr RALT H   &kp T  &hr RMETA N  &sft RSHFT S
+                &sft LSHFT A  &hl LMETA O   &kp E      &hl LALT U  &hl LCTRL I              &hr RCTRL D   &hr RALT H   &kp T  &hr RMETA N   &sft RSHFT S
                 &kp SQT       &kp Q         &kp J      &kp K       &kp X                    &kp B         &kp M        &kp W  &kp V         &kp Z
                                             &kp SPACE  &kp LSHFT   &sys SYS LG(LS(N4))      &mo SYS       &kp RSHFT    &mo NAV
             >;
