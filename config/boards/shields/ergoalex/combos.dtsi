@@ -59,7 +59,7 @@
         COMBO(l_lbrc, &clh SPL LBRC, SPL_KEY 21, FAST_TAP, FAST_IDLE)
         COMBO(l_lbkt, &clh SPL LBKT, SPL_KEY 22, FAST_TAP, FAST_IDLE)
         COMBO(l_lpar, &clh SPL LPAR, SPL_KEY 23, FAST_TAP, FAST_IDLE)
-        COMBO(l_equal, &clh SPL EQUAL, SPL_KEY 24, FAST_TAP, 180)
+        COMBO(l_equal, &clh SPL EQUAL, SPL_KEY 24, 70, FAST_IDLE)
         COMBO(l_star, &clh SPL STAR, SPL_KEY 30, SLOW_TAP, SLOW_IDLE)
         COMBO(l_hash, &clh SPL HASH, SPL_KEY 31, SLOW_TAP, SLOW_IDLE)
         COMBO(l_bslh, &clh SPL BSLH, SPL_KEY 32, SLOW_TAP, SLOW_IDLE)
