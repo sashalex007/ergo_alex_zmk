@@ -14,10 +14,10 @@
 
 //timing
 #define FAST_TAP 60
-#define FAST_IDLE 200
+#define FAST_IDLE 160
 
 #define SLOW_TAP 60
-#define SLOW_IDLE 200
+#define SLOW_IDLE 160
 
 //make combo
 #define COMBO(NAME, BINDINGS, KEYPOS, TAP, IDLE) \
