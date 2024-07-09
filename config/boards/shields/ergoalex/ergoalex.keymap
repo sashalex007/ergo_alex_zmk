@@ -13,6 +13,7 @@
 #define SPR 3
 #define NUM 4
 #define SYS 5
+#define SYM 6
 
 #define TAP 280
 #define IDLE 200
@@ -147,7 +148,7 @@
                 &colon        &kp COMMA     &kp DOT    &kp P       &kp Y                    &kp F         &kp G       &kp C   &kp R        &kp L
                 &sft LSHFT A  &hl LMETA O   &kp E      &hl LALT U  &hl LCTRL I              &hr RCTRL D   &hr RALT H  &kp T   &hr RMETA N  &sft RSHFT S
                 &kp SQT       &kp Q         &kp J      &kp K       &kp X                    &kp B         &kp M       &kp W   &kp V        &kp Z
-                                            &kp SPACE  &kp LSHFT   &sys SYS LG(LS(N4))      &mo SYS       &kp RSHFT   &mo NAV
+                                            &kp SPACE  &mo SPR     &sys SYS LG(LS(N4))      &mo SYS       &mo SPL     &mo NAV
             >;
         };
         
@@ -182,7 +183,7 @@
                 ___  ___  ___  ___  ___     ___        &kp DLLR  &kp TILDE  &kp CARET  &kp GRAVE
                           ___  ___  ___     ___        ___       ___
             >;
-        };  
+        };
 
         num_layer {
             bindings = <
@@ -201,6 +202,16 @@
                 XXX           XXX           XXX           XXX           &sys_reset        &sys_reset   ___  ___  ___  ___
                 &bt BT_CLR    XXX           XXX           XXX           &bootloader       &bootloader  ___  ___  ___  ___
                                             ___           XXX           XXX               ___          ___  ___
+            >;
+        };
+
+        sym_layer {
+            bindings = <
+                ___       ___       ___       ___       ___           ___        ___       ___        ___        ___
+                &kp EXCL  &kp RBRC  &kp RBKT  &kp RPAR  &kp PRCNT     &kp AMPS   &kp PIPE  &kp UNDER  &kp LT     &kp GT
+                &kp PLUS  &kp LBRC  &kp LBKT  &kp LPAR  &kp EQUAL     &kp EQUAL  ___       ___        &kp QMARK  &kp MINUS
+                &kp STAR  &kp HASH  &kp BSLH  &kp FSLH  &kp AT        ___        &kp DLLR  &kp TILDE  &kp CARET  &kp GRAVE
+                                    ___       ___       ___           ___  ___  ___
             >;
         };
 
