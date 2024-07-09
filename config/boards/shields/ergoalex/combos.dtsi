@@ -50,7 +50,7 @@
         │  +   {   [   (   = │ │ __  __  XX  __  __ │
         │  *   #   \   /   @ │ │ __  __  __  __  __ │
         ╰───────────╮  __ __ │ │ __  __ ╭───────────╯
-                    ╰────────╯ ╰────────╯            
+                    ╰────────╯ ╰────────╯            */
         COMBO(l_excl, &clh SPL EXCL, SPL_KEY 10, SLOW_TAP, SLOW_IDLE)
         COMBO(l_rbrc, &clh SPL RBRC, SPL_KEY 11, SLOW_TAP, SLOW_IDLE)
         COMBO(l_rbkt, &clh SPL RBKT, SPL_KEY 12, SLOW_TAP, SLOW_IDLE)
@@ -66,7 +66,7 @@
         COMBO(l_bslh, &clh SPL BSLH, SPL_KEY 32, SLOW_TAP, SLOW_IDLE)
         COMBO(l_fslh, &clh SPL FSLH, SPL_KEY 33, SLOW_TAP, SLOW_IDLE)
         COMBO(l_at, &clh SPL AT, SPL_KEY 34, SLOW_TAP, SLOW_IDLE)
-        */
+        
 
         /*             right hand symbols
         ╭────────────────────╮ ╭────────────────────╮
@@ -74,7 +74,7 @@
         │ __  __  XX  __  __ │ │ =   __  __  ?   -  │
         │ __  __  __  __  __ │ │ __  $   ~   ^   `  │
         ╰───────────╮  __ __ │ │ __  __ ╭───────────╯
-                    ╰────────╯ ╰────────╯            
+                    ╰────────╯ ╰────────╯            */
         COMBO(r_pipe, &clh SPR PIPE, SPR_KEY 15, SLOW_TAP, SLOW_IDLE)
         COMBO(r_amps, &clh SPR AMPS, SPR_KEY 16, SLOW_TAP, SLOW_IDLE)
         COMBO(r_under, &clh SPR UNDER, SPR_KEY 17, SLOW_TAP, SLOW_IDLE)
@@ -87,7 +87,7 @@
         COMBO(r_tilde, &clh SPR TILDE, SPR_KEY 37, SLOW_TAP, SLOW_IDLE)
         COMBO(r_caret, &clh SPR CARET, SPR_KEY 38, SLOW_TAP, SLOW_IDLE)
         COMBO(r_grave, &clh SPR GRAVE, SPR_KEY 39, SLOW_TAP, SLOW_IDLE)
-        */
+        
 
         /*              numbers
         ╭────────────────────╮ ╭────────────────────╮
