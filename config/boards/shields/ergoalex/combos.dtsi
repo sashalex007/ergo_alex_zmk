@@ -7,8 +7,8 @@
 #define NUM 4
               
 //pseudo-mod-keys
-#define SPL_KEY 27
-#define SPR_KEY 22
+#define SPL_KEY 26
+#define SPR_KEY 23
 #define NUM_KEY 26
 #define NAV_KEY 45
 
