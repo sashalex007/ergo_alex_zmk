@@ -13,7 +13,7 @@
         io-channels = <&adc 4>;
         output-ohms = <2000000>;
         full-ohms = <(2000000+806000)>;
-        power-gpios = <&gpio0 9 (GPIO_ACTIVE_HIGH)>;
+        power-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH)>;
     };
 
 
