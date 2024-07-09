@@ -15,7 +15,7 @@
 #define SYS 5
 
 #define TAP 280
-#define IDLE 150
+#define IDLE 200
 
 / { 
     macros {
