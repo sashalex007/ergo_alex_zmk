@@ -13,7 +13,6 @@
 #define SPR 3
 #define NUM 4
 #define SYS 5
-#define SYM 6
 
 #define TAP 280
 #define IDLE 200
@@ -58,68 +57,6 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp COLON>, <&kp SEMI>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-
-        one: one {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp LBKT>, <&kp N1>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        two: two {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp LBRC>, <&kp N2>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        three: three {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp RBRC>, <&kp N3>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        four: four {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp LPAR>, <&kp N4>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        five: five {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp EQUAL>, <&kp N5>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        six: six {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp STAR>, <&kp N6>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        seven: seven {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp RPAR>, <&kp N7>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        eight: eight {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp PLUS>, <&kp N8>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        nine: nine {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp EXCL>, <&kp N9>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        zero: zero {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp RBKT>, <&kp N0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -202,16 +139,6 @@
                 XXX           XXX           XXX           XXX           &sys_reset        &sys_reset   ___  ___  ___  ___
                 &bt BT_CLR    XXX           XXX           XXX           &bootloader       &bootloader  ___  ___  ___  ___
                                             ___           XXX           XXX               ___          ___  ___
-            >;
-        };
-
-        sym_layer {
-            bindings = <
-                ___       ___       ___       ___       ___           ___        ___       ___        ___        ___
-                &kp EXCL  &kp RBRC  &kp RBKT  &kp RPAR  &kp PRCNT     &kp AMPS   &kp PIPE  &kp UNDER  &kp LT     &kp GT
-                &kp PLUS  &kp LBRC  &kp LBKT  &kp LPAR  &kp EQUAL     &kp EQUAL  ___       ___        &kp QMARK  &kp MINUS
-                &kp STAR  &kp HASH  &kp BSLH  &kp FSLH  &kp AT        ___        &kp DLLR  &kp TILDE  &kp CARET  &kp GRAVE
-                                    ___       ___       ___           ___  ___  ___
             >;
         };
 
