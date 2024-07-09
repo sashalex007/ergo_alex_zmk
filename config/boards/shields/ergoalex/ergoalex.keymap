@@ -115,8 +115,8 @@
         spr_layer {
             bindings = <
                 ___  ___  ___  ___  ___     ___        ___       ___        ___        ___
-                ___  ___  ___  ___  ___     &kp AMPS   &kp PIPE  &kp UNDER  &kp LT     &kp GT
-                ___  ___  ___  ___  ___     &kp EQUAL  ___       ___        &kp QMARK  &kp MINUS
+                ___  ___  ___  ___  ___     &kp PIPE   &kp AMPS  &kp UNDER  &kp LT     &kp GT
+                ___  ___  ___  ___  ___     &kp EQUAL  ___       &kp UNDER  &kp QMARK  &kp MINUS
                 ___  ___  ___  ___  ___     ___        &kp DLLR  &kp TILDE  &kp CARET  &kp GRAVE
                           ___  ___  ___     ___        ___       ___
             >;
