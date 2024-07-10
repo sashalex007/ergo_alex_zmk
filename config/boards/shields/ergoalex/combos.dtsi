@@ -4,18 +4,15 @@
 #define NAV 1
 #define SPL 2
 #define SPR 3
-#define NUM 4
               
 //pseudo-mod-keys
 #define SPL_KEY 26
 #define SPR_KEY 23
-#define NUM_KEY 26
 #define NAV_KEY 45
 
 //timing
 #define FAST_TAP 60
 #define FAST_IDLE 180
-
 #define SLOW_TAP 60
 #define SLOW_IDLE 180
 
@@ -37,8 +34,9 @@
   │  0   1   2   3   4 │ │  5   6   7   8   9 │
   │ 10  11  12  13  14 │ │ 15  16  17  18  19 │
   │ 20  21  22  23  24 │ │ 25  26  27  28  29 │
-  ╰───────────╮ 30  31 │ │ 32  33 ╭───────────╯
-              ╰────────╯ ╰────────╯            */
+  │ 30  31  32  33  34 │ │ 35  36  37  38  39 │
+  ╰───────╮ 40  41  42 │ │ 43  44  45 ╭───────╯
+          ╰────────────╯ ╰────────────╯         */
 
 / {   
     combos {
@@ -46,11 +44,12 @@
 
         /*              left hand symbols
         ╭────────────────────╮ ╭────────────────────╮ 
+        │ __  __  __  __  __ │ │ __  __  __  __  __ │ 
         │  !   }   ]   )   % │ │ __  __  __  __  __ │  
-        │  +   {   [   (   = │ │ __  __  XX  __  __ │
+        │  +   {   [   (   = │ │ __  XX  __  __  __ │
         │  *   #   \   /   @ │ │ __  __  __  __  __ │
-        ╰───────────╮  __ __ │ │ __  __ ╭───────────╯
-                    ╰────────╯ ╰────────╯            */
+        ╰───────╮ __  __  __ │ │ __  __  __ ╭───────╯
+                ╰────────────╯ ╰────────────╯        */
         COMBO(l_excl, &clh SPL EXCL, SPL_KEY 10, SLOW_TAP, SLOW_IDLE)
         COMBO(l_rbrc, &clh SPL RBRC, SPL_KEY 11, SLOW_TAP, SLOW_IDLE)
         COMBO(l_rbkt, &clh SPL RBKT, SPL_KEY 12, SLOW_TAP, SLOW_IDLE)
@@ -70,11 +69,12 @@
 
         /*             right hand symbols
         ╭────────────────────╮ ╭────────────────────╮
+        │ __  __  __  __  __ │ │ __  __  __  __  __ │ 
         │ __  __  __  __  __ │ │ |   &   _   <   >  │
-        │ __  __  XX  __  __ │ │ =   __  __  ?   -  │
+        │ __  __  __  XX  __ │ │ =   __  __  ?   -  │
         │ __  __  __  __  __ │ │ __  $   ~   ^   `  │
-        ╰───────────╮  __ __ │ │ __  __ ╭───────────╯
-                    ╰────────╯ ╰────────╯            */
+        ╰───────╮ __  __  __ │ │ __  __  __ ╭───────╯
+                ╰────────────╯ ╰────────────╯        */
         COMBO(r_pipe, &clh SPR PIPE, SPR_KEY 15, SLOW_TAP, SLOW_IDLE)
         COMBO(r_amps, &clh SPR AMPS, SPR_KEY 16, SLOW_TAP, SLOW_IDLE)
         COMBO(r_under, &clh SPR UNDER, SPR_KEY 17, SLOW_TAP, SLOW_IDLE)
@@ -86,28 +86,7 @@
         COMBO(r_dllr, &clh SPR DLLR, SPR_KEY 36, SLOW_TAP, SLOW_IDLE)
         COMBO(r_tilde, &clh SPR TILDE, SPR_KEY 37, SLOW_TAP, SLOW_IDLE)
         COMBO(r_caret, &clh SPR CARET, SPR_KEY 38, SLOW_TAP, SLOW_IDLE)
-        COMBO(r_grave, &clh SPR GRAVE, SPR_KEY 39, SLOW_TAP, SLOW_IDLE)
-        
-        COMBO(r_under2, &clh SPR UNDER, SPR_KEY 27, SLOW_TAP, SLOW_IDLE)
-
-        /*              numbers
-        ╭────────────────────╮ ╭────────────────────╮
-        │  5   6   7   8   9 │ │ __  __  __  __  __ │
-        │  0   1   2   3   4 │ │ __  XX  __  __  __ │
-        │ __  __  __  __  __ │ │ __  __  __  __  __ │
-        ╰───────────╮  __ __ │ │ __  __ ╭───────────╯
-                    ╰────────╯ ╰────────╯            
-        COMBO(l_five, &clh NUM N5, NUM_KEY 10, SLOW_TAP, SLOW_IDLE)
-        COMBO(l_six, &clh NUM N6, NUM_KEY 11, SLOW_TAP, SLOW_IDLE)
-        COMBO(l_seven, &clh NUM N7, NUM_KEY 12, SLOW_TAP, SLOW_IDLE)
-        COMBO(l_eight, &clh NUM N8, NUM_KEY 13, SLOW_TAP, SLOW_IDLE)
-        COMBO(l_nine, &clh NUM N9, NUM_KEY 14, SLOW_TAP, SLOW_IDLE)
-        COMBO(l_zero, &clh NUM N0, NUM_KEY 20, FAST_TAP, FAST_IDLE)
-        COMBO(l_one, &clh NUM N1, NUM_KEY 21, FAST_TAP, FAST_IDLE)
-        COMBO(l_two, &clh NUM N2, NUM_KEY 22, FAST_TAP, FAST_IDLE)
-        COMBO(l_three, &clh NUM N3, NUM_KEY 23, FAST_TAP, FAST_IDLE)
-        COMBO(l_four, &clh NUM N4, NUM_KEY 24, FAST_TAP, FAST_IDLE)
-        */
+        COMBO(r_grave, &clh SPR GRAVE, SPR_KEY 39, SLOW_TAP, SLOW_IDLE)        
 
         //fast nav combos
         COMBO(nav_ret, &clh NAV RET, NAV_KEY 23, SLOW_TAP, SLOW_IDLE)
