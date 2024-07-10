@@ -88,7 +88,7 @@
         COMBO(r_caret, &clh SPR CARET, SPR_KEY 38, SLOW_TAP, SLOW_IDLE)
         COMBO(r_grave, &clh SPR GRAVE, SPR_KEY 39, SLOW_TAP, SLOW_IDLE)
         
-        COMBO(r_under2, &clh SPR UNDER, SPR_KEY 26, SLOW_TAP, SLOW_IDLE)
+        COMBO(r_under2, &clh SPR UNDER, SPR_KEY 27, SLOW_TAP, SLOW_IDLE)
 
         /*              numbers
         ╭────────────────────╮ ╭────────────────────╮
