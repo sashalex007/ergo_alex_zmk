@@ -27,9 +27,9 @@ If you are here for the combo-layer hybrid implementation, jump to [keymap](http
                    nav/edit
 ╭─────────────────────╮ ╭────────────────────╮
 │ __  __  __  __  __  │ │ __  __  __  __  __ │
-│ esc cut cpy pst cmt │ │ pup wlf up wrt __  │
+│ esc cut cpy pst cmt │ │ pup wlf up wrt  __ │
 │ sft __  bsp ret __  │ │ hm  lf  dn rt  end │
-│ __  __  __  tab __  │ │ pdn __  __  __ __  │
+│ __  __  __  tab __  │ │ pdn __  __  __  __ │
 ╰───────╮ __  __  __  │ │ __  __  XX ╭───────╯
         ╰─────────────╯ ╰────────────╯        
 
