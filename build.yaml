@@ -20,8 +20,8 @@
 include:
   - board: nice_nano_v2
     shield: ergoalex_left
-  # - board: nice_nano_v2
-  #   shield: ergoalex_right
+  - board: nice_nano_v2
+    shield: ergoalex_right
   # - board: nice_nano_v2
   #   shield: settings_reset
 

@@ -4,6 +4,7 @@
 #define NAV 1
 #define SPL 2
 #define SPR 3
+#define SYS 4
 #define WIN 5
 #define NAVWIN 6
               
