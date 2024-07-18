@@ -112,11 +112,11 @@
 
         nav_layer_win {
             bindings = <
-            ___        ___        ___        ___        ___                ___           ___               ___       ___                ___
-            &kp ESC    &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(FSLH)       &kp PG_UP  &kp LC(LS(LEFT))  &kp UP    &kp LC(LS(RIGHT))  ___
-            &kp LSHFT  XXX        &kp BSPC   &kp RET    ___                &kp HOME   &kp LEFT          &kp DOWN  &kp RIGHT          &kp END
-            XXX        XXX        XXX        &kp TAB    ___                &kp PG_DN  ___               ___       ___                ___
-                                  ___        ___        ___                ___        ___               ___
+            ___        ___        ___        ___        ___                ___        ___           ___       ___                ___
+            &kp ESC    &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(FSLH)       &kp PG_UP  &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  ___
+            &kp LSHFT  XXX        &kp BSPC   &kp RET    ___                &kp HOME   &kp LEFT      &kp DOWN  &kp RIGHT          &kp END
+            XXX        XXX        XXX        &kp TAB    ___                &kp PG_DN  ___           ___       ___                ___
+                                  ___        ___        ___                ___        ___           ___
             >;
         };
 
