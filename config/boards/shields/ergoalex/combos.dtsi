@@ -2,11 +2,11 @@
 //layers
 #define DEF 0
 #define NAV 1
-#define SPL 2
-#define SPR 3
-#define SYS 4
-#define WIN 5
-#define NAVWIN 6
+#define WIN 2
+#define NAVWIN 3
+#define SPL 4
+#define SPR 5
+#define SYS 6
               
 //pseudo-mod-keys
 #define SPL_KEY 26

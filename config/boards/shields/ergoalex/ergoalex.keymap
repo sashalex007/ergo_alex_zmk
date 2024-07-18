@@ -9,11 +9,11 @@
 
 #define DEF 0
 #define NAV 1
-#define SPL 2
-#define SPR 3
-#define SYS 4
-#define WIN 5
-#define NAVWIN 6
+#define WIN 2
+#define NAVWIN 3
+#define SPL 4
+#define SPR 5
+#define SYS 6
 
 #define TAP 280
 #define IDLE 200
@@ -100,6 +100,26 @@
             >;
         };
 
+        win_layer {
+            bindings = <
+                &kp N1        &kp N2        &kp N3     &kp N4      &kp N5                   &kp N6        &kp N7      &kp N8  &kp N9       &kp N0
+                &colon        &kp COMMA     &kp DOT    &kp P       &kp Y                    &kp F         &kp G       &kp C   &kp R        &kp L
+                &sft LSHFT A  &hl LMETA O   &kp E      &hl LALT U  &hl LCTRL I              &hr RCTRL D   &hr RALT H  &kp T   &hr RMETA N  &sft RSHFT S
+                &kp SQT       &kp Q         &kp J      &kp K       &kp X                    &kp B         &kp M       &kp W   &kp V        &kp Z
+                                            &kp SPACE  &mo SPR     &sys SYS LG(LS(N4))      &mo SYS       &to DEF     &mo NAVWIN
+            >;
+        };
+
+        nav_layer_win {
+            bindings = <
+            ___        ___        ___        ___        ___                ___           ___               ___       ___                ___
+            &kp ESC    &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(FSLH)       &kp PG_UP  &kp LC(LS(LEFT))  &kp UP    &kp LC(LS(RIGHT))  ___
+            &kp LSHFT  XXX        &kp BSPC   &kp RET    ___                &kp HOME   &kp LEFT          &kp DOWN  &kp RIGHT          &kp END
+            XXX        XXX        XXX        &kp TAB    ___                &kp PG_DN  ___               ___       ___                ___
+                                  ___        ___        ___                ___        ___               ___
+            >;
+        };
+
         spl_layer {
             bindings = <
                 ___       ___       ___       ___       ___           ___  ___  ___  ___  ___
@@ -127,26 +147,6 @@
                 XXX           XXX           XXX           XXX           &sys_reset        &sys_reset   ___  ___  ___  ___
                 &bt BT_CLR    XXX           XXX           XXX           &bootloader       &bootloader  ___  ___  ___  ___
                                             ___           XXX           XXX               ___          ___  ___
-            >;
-        };
-
-        win_layer {
-            bindings = <
-                &kp N1        &kp N2        &kp N3     &kp N4      &kp N5                   &kp N6        &kp N7      &kp N8  &kp N9       &kp N0
-                &colon        &kp COMMA     &kp DOT    &kp P       &kp Y                    &kp F         &kp G       &kp C   &kp R        &kp L
-                &sft LSHFT A  &hl LMETA O   &kp E      &hl LALT U  &hl LCTRL I              &hr RCTRL D   &hr RALT H  &kp T   &hr RMETA N  &sft RSHFT S
-                &kp SQT       &kp Q         &kp J      &kp K       &kp X                    &kp B         &kp M       &kp W   &kp V        &kp Z
-                                            &kp SPACE  &mo SPR     &sys SYS LG(LS(N4))      &mo SYS       &to DEF     &mo NAVWIN
-            >;
-        };
-
-        nav_layer_win {
-            bindings = <
-            ___        ___        ___        ___        ___                ___           ___               ___       ___                ___
-            &kp ESC    &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(FSLH)       &kp PG_UP  &kp LC(LS(LEFT))  &kp UP    &kp LC(LS(RIGHT))  ___
-            &kp LSHFT  XXX        &kp BSPC   &kp RET    ___                &kp HOME   &kp LEFT          &kp DOWN  &kp RIGHT          &kp END
-            XXX        XXX        XXX        &kp TAB    ___                &kp PG_DN  ___               ___       ___                ___
-                                  ___        ___        ___                ___        ___               ___
             >;
         };
 
