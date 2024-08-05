@@ -112,7 +112,7 @@
         COMBO(seven, &clh NUM N7, NUM_KEY 36, SLOW_TAP, SLOW_IDLE)
         COMBO(eight, &clh NUM N8, NUM_KEY 37, SLOW_TAP, SLOW_IDLE)
         COMBO(nine, &clh NUM N9, NUM_KEY 38, SLOW_TAP, SLOW_IDLE)
-        
+           
 
         //fast nav combos
         COMBO(nav_ret, &clh NAV RET, NAV_KEY 23, SLOW_TAP, SLOW_IDLE)
