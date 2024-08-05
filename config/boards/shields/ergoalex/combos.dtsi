@@ -103,15 +103,15 @@
         ╰───────╮ XX  __  __ │ │ __  __  __ ╭───────╯
                 ╰────────────╯ ╰────────────╯        */
         COMBO(one, &clh NUM N1, NUM_KEY 16, SLOW_TAP, SLOW_IDLE)
-        COMBO(one, &clh NUM N2, NUM_KEY 17, SLOW_TAP, SLOW_IDLE)
-        COMBO(one, &clh NUM N3, NUM_KEY 18, SLOW_TAP, SLOW_IDLE)
-        COMBO(one, &clh NUM N0, NUM_KEY 25, SLOW_TAP, SLOW_IDLE)
-        COMBO(one, &clh NUM N4, NUM_KEY 26, SLOW_TAP, SLOW_IDLE)
-        COMBO(one, &clh NUM N5, NUM_KEY 27, SLOW_TAP, SLOW_IDLE)
-        COMBO(one, &clh NUM N6, NUM_KEY 28, SLOW_TAP, SLOW_IDLE)
-        COMBO(one, &clh NUM N7, NUM_KEY 36, SLOW_TAP, SLOW_IDLE)
-        COMBO(one, &clh NUM N8, NUM_KEY 37, SLOW_TAP, SLOW_IDLE)
-        COMBO(one, &clh NUM N9, NUM_KEY 38, SLOW_TAP, SLOW_IDLE)
+        COMBO(two, &clh NUM N2, NUM_KEY 17, SLOW_TAP, SLOW_IDLE)
+        COMBO(three, &clh NUM N3, NUM_KEY 18, SLOW_TAP, SLOW_IDLE)
+        COMBO(zero, &clh NUM N0, NUM_KEY 25, SLOW_TAP, SLOW_IDLE)
+        COMBO(four, &clh NUM N4, NUM_KEY 26, SLOW_TAP, SLOW_IDLE)
+        COMBO(five, &clh NUM N5, NUM_KEY 27, SLOW_TAP, SLOW_IDLE)
+        COMBO(six, &clh NUM N6, NUM_KEY 28, SLOW_TAP, SLOW_IDLE)
+        COMBO(seven, &clh NUM N7, NUM_KEY 36, SLOW_TAP, SLOW_IDLE)
+        COMBO(eight, &clh NUM N8, NUM_KEY 37, SLOW_TAP, SLOW_IDLE)
+        COMBO(nine, &clh NUM N9, NUM_KEY 38, SLOW_TAP, SLOW_IDLE)
         
 
         //fast nav combos
