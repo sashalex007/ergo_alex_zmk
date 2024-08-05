@@ -13,7 +13,8 @@
 #define NAVWIN 3
 #define SPL 4
 #define SPR 5
-#define SYS 6
+#define NUM 6
+#define SYS 7
 
 #define TAP 280
 #define IDLE 200
@@ -112,10 +113,10 @@
 
         nav_layer_win {
             bindings = <
-            ___        ___        ___        ___        ___                ___        ___           ___       ___                ___
+            ___        ___        ___        ___        ___                ___        ___           ___       ___            ___
             &kp ESC    &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(FSLH)       &kp PG_UP  &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  ___
-            &kp LSHFT  XXX        &kp BSPC   &kp RET    ___                &kp HOME   &kp LEFT      &kp DOWN  &kp RIGHT          &kp END
-            XXX        XXX        XXX        &kp TAB    ___                &kp PG_DN  ___           ___       ___                ___
+            &kp LSHFT  XXX        &kp BSPC   &kp RET    ___                &kp HOME   &kp LEFT      &kp DOWN  &kp RIGHT      &kp END
+            XXX        XXX        XXX        &kp TAB    ___                &kp PG_DN  ___           ___       ___            ___
                                   ___        ___        ___                ___        ___           ___
             >;
         };
@@ -134,11 +135,21 @@
             bindings = <
                 ___  ___  ___  ___  ___     ___        ___       ___        ___        ___
                 ___  ___  ___  ___  ___     &kp PIPE   &kp AMPS  &kp UNDER  &kp LT     &kp GT
-                ___  ___  ___  ___  ___     &kp EQUAL  ___       &kp UNDER  &kp QMARK  &kp MINUS
+                ___  ___  ___  ___  ___     &kp EQUAL  ___       ___        &kp QMARK  &kp MINUS
                 ___  ___  ___  ___  ___     ___        &kp DLLR  &kp TILDE  &kp CARET  &kp GRAVE
                           ___  ___  ___     ___        ___       ___
             >;
         };
+
+        numpad_layer {
+            bindings = <
+                ___  ___  ___  ___  ___     ___  ___  ___  ___  ___
+                ___  ___  ___  ___  ___     ___     &kp N1  &kp N2  &kp N3  ___
+                ___  ___  ___  ___  ___     &kp N0  &kp N4  &kp N5  &kp N6  ___
+                ___  ___  ___  ___  ___     ___     &kp N7  &kp N8  &kp N9  ___
+                          ___  ___  ___     ___  ___  ___
+            >;
+        };        
 
         sys_layer {
             bindings = <
@@ -149,6 +160,7 @@
                                             ___           XXX           XXX               ___          ___  ___
             >;
         };
+
 
         blank_layer {
             bindings = <
@@ -162,3 +174,5 @@
         
     };
 };
+
+

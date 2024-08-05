@@ -6,12 +6,14 @@
 #define NAVWIN 3
 #define SPL 4
 #define SPR 5
-#define SYS 6
+#define NUM 6
+#define SYS 7
               
 //pseudo-mod-keys
 #define SPL_KEY 26
 #define SPR_KEY 23
 #define NAV_KEY 45
+#define NUM_KEY 40
 
 //timing
 #define FAST_TAP 60
@@ -89,7 +91,28 @@
         COMBO(r_dllr, &clh SPR DLLR, SPR_KEY 36, SLOW_TAP, SLOW_IDLE)
         COMBO(r_tilde, &clh SPR TILDE, SPR_KEY 37, SLOW_TAP, SLOW_IDLE)
         COMBO(r_caret, &clh SPR CARET, SPR_KEY 38, SLOW_TAP, SLOW_IDLE)
-        COMBO(r_grave, &clh SPR GRAVE, SPR_KEY 39, SLOW_TAP, SLOW_IDLE)        
+        COMBO(r_grave, &clh SPR GRAVE, SPR_KEY 39, SLOW_TAP, SLOW_IDLE)
+
+
+        /*                   nums
+        ╭────────────────────╮ ╭────────────────────╮
+        │ __  __  __  __  __ │ │ __  __  __  __  __ │ 
+        │ __  __  __  __  __ │ │ __  1   2   3   __ │
+        │ __  __  __  __  __ │ │ 0   4   5   6   __ │
+        │ __  __  __  __  __ │ │ __  7   8   9   __ │
+        ╰───────╮ XX  __  __ │ │ __  __  __ ╭───────╯
+                ╰────────────╯ ╰────────────╯        */
+        COMBO(one, &clh NUM N1, NUM_KEY 16, SLOW_TAP, SLOW_IDLE)
+        COMBO(one, &clh NUM N2, NUM_KEY 17, SLOW_TAP, SLOW_IDLE)
+        COMBO(one, &clh NUM N3, NUM_KEY 18, SLOW_TAP, SLOW_IDLE)
+        COMBO(one, &clh NUM N0, NUM_KEY 25, SLOW_TAP, SLOW_IDLE)
+        COMBO(one, &clh NUM N4, NUM_KEY 26, SLOW_TAP, SLOW_IDLE)
+        COMBO(one, &clh NUM N5, NUM_KEY 27, SLOW_TAP, SLOW_IDLE)
+        COMBO(one, &clh NUM N6, NUM_KEY 28, SLOW_TAP, SLOW_IDLE)
+        COMBO(one, &clh NUM N7, NUM_KEY 36, SLOW_TAP, SLOW_IDLE)
+        COMBO(one, &clh NUM N8, NUM_KEY 37, SLOW_TAP, SLOW_IDLE)
+        COMBO(one, &clh NUM N9, NUM_KEY 38, SLOW_TAP, SLOW_IDLE)
+        
 
         //fast nav combos
         COMBO(nav_ret, &clh NAV RET, NAV_KEY 23, SLOW_TAP, SLOW_IDLE)
