@@ -49,6 +49,25 @@
     combos {
         compatible = "zmk,combos";
 
+        /*                   nums
+        ╭────────────────────╮ ╭────────────────────╮
+        │ __  __  __  __  __ │ │ __  __  __  __  __ │ 
+        │ __  __  __  __  __ │ │ __  1   2   3   __ │
+        │ __  __  __  __  __ │ │ 0   4   5   6   __ │
+        │ __  __  __  __  __ │ │ __  7   8   9   __ │
+        ╰───────╮ XX  __  __ │ │ __  __  __ ╭───────╯
+                ╰────────────╯ ╰────────────╯        */
+        COMBO(one, &clh NUM N1, NUM_KEY1 NUM_KEY2 16, SLOW_TAP, SLOW_IDLE)
+        COMBO(two, &clh NUM N2, NUM_KEY1 NUM_KEY2 17, SLOW_TAP, SLOW_IDLE)
+        COMBO(three, &clh NUM N3, NUM_KEY1 NUM_KEY2 18, SLOW_TAP, SLOW_IDLE)
+        COMBO(zero, &clh NUM N0, NUM_KEY1 NUM_KEY2 25, SLOW_TAP, SLOW_IDLE)
+        COMBO(four, &clh NUM N4, NUM_KEY1 NUM_KEY2 26, SLOW_TAP, SLOW_IDLE)
+        COMBO(five, &clh NUM N5, NUM_KEY1 NUM_KEY2 27, SLOW_TAP, SLOW_IDLE)
+        COMBO(six, &clh NUM N6, NUM_KEY1 NUM_KEY2 28, SLOW_TAP, SLOW_IDLE)
+        COMBO(seven, &clh NUM N7, NUM_KEY1 NUM_KEY2 36, SLOW_TAP, SLOW_IDLE)
+        COMBO(eight, &clh NUM N8, NUM_KEY1 NUM_KEY2 37, SLOW_TAP, SLOW_IDLE)
+        COMBO(nine, &clh NUM N9, NUM_KEY1 NUM_KEY2 38, SLOW_TAP, SLOW_IDLE)
+
         /*              left hand symbols
         ╭────────────────────╮ ╭────────────────────╮ 
         │ __  __  __  __  __ │ │ __  __  __  __  __ │ 
@@ -72,7 +91,6 @@
         COMBO(l_bslh, &clh SPL BSLH, SPL_KEY 32, SLOW_TAP, SLOW_IDLE)
         COMBO(l_fslh, &clh SPL FSLH, SPL_KEY 33, SLOW_TAP, SLOW_IDLE)
         COMBO(l_at, &clh SPL AT, SPL_KEY 34, SLOW_TAP, SLOW_IDLE)
-        
 
         /*             right hand symbols
         ╭────────────────────╮ ╭────────────────────╮
@@ -95,31 +113,10 @@
         COMBO(r_caret, &clh SPR CARET, SPR_KEY 38, SLOW_TAP, SLOW_IDLE)
         COMBO(r_grave, &clh SPR GRAVE, SPR_KEY 39, SLOW_TAP, SLOW_IDLE)
 
-
-        /*                   nums
-        ╭────────────────────╮ ╭────────────────────╮
-        │ __  __  __  __  __ │ │ __  __  __  __  __ │ 
-        │ __  __  __  __  __ │ │ __  1   2   3   __ │
-        │ __  __  __  __  __ │ │ 0   4   5   6   __ │
-        │ __  __  __  __  __ │ │ __  7   8   9   __ │
-        ╰───────╮ XX  __  __ │ │ __  __  __ ╭───────╯
-                ╰────────────╯ ╰────────────╯        */
-        COMBO(one, &clh NUM N1, NUM_KEY1 NUM_KEY2 16, SLOW_TAP, SLOW_IDLE)
-        COMBO(two, &clh NUM N2, NUM_KEY1 NUM_KEY2 17, SLOW_TAP, SLOW_IDLE)
-        COMBO(three, &clh NUM N3, NUM_KEY1 NUM_KEY2 18, SLOW_TAP, SLOW_IDLE)
-        COMBO(zero, &clh NUM N0, NUM_KEY1 NUM_KEY2 25, SLOW_TAP, SLOW_IDLE)
-        COMBO(four, &clh NUM N4, NUM_KEY1 NUM_KEY2 26, SLOW_TAP, SLOW_IDLE)
-        COMBO(five, &clh NUM N5, NUM_KEY1 NUM_KEY2 27, SLOW_TAP, SLOW_IDLE)
-        COMBO(six, &clh NUM N6, NUM_KEY1 NUM_KEY2 28, SLOW_TAP, SLOW_IDLE)
-        COMBO(seven, &clh NUM N7, NUM_KEY1 NUM_KEY2 36, SLOW_TAP, SLOW_IDLE)
-        COMBO(eight, &clh NUM N8, NUM_KEY1 NUM_KEY2 37, SLOW_TAP, SLOW_IDLE)
-        COMBO(nine, &clh NUM N9, NUM_KEY1 NUM_KEY2 38, SLOW_TAP, SLOW_IDLE)
-
         //fast nav combos
         COMBO(nav_ret, &clh NAV RET, NAV_KEY 23, SLOW_TAP, SLOW_IDLE)
         COMBO(nav_bspc, &clh NAV BSPC, NAV_KEY 22, SLOW_TAP, SLOW_IDLE)
         COMBO(nav_tab, &clh NAV TAB, NAV_KEY 33, SLOW_TAP, SLOW_IDLE)
-
         COMBO(nav_esc, &clh NAV ESC, NAV_KEY 10, SLOW_TAP, SLOW_IDLE)
         COMBO(nav_cut, &clh NAV LG(X), NAV_KEY 11, SLOW_TAP, SLOW_IDLE)
         COMBO(nav_copy, &clh NAV LG(C), NAV_KEY 12, SLOW_TAP, SLOW_IDLE)
