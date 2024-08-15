@@ -76,6 +76,13 @@
             tapping-term-ms = <250>;
             bindings = <&mo>, <&kp>;
         };
+        win: windows {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&to DEF>, <&to WIN>; 
+        };
+
     };
 
     keymap {
@@ -87,7 +94,7 @@
                 &colon        &kp COMMA     &kp DOT    &kp P       &kp Y                    &kp F         &kp G       &kp C   &kp R        &kp L
                 &sft LSHFT A  &hl LMETA O   &kp E      &hl LALT U  &hl LCTRL I              &hr RCTRL D   &hr RALT H  &kp T   &hr RMETA N  &sft RSHFT S
                 &kp SQT       &kp Q         &kp J      &kp K       &kp X                    &kp B         &kp M       &kp W   &kp V        &kp Z
-                                            &kp SPACE  &mo NUM     &sys SYS LG(LS(N4))      &mo SYS       &to WIN     &mo NAV
+                                            &kp SPACE  &mo NUM     &sys SYS LG(LS(N4))      &mo SYS       &win        &mo NAV
             >;
         };
 
@@ -95,7 +102,7 @@
             bindings = <
             ___        ___        ___        ___        ___                ___           ___           ___       ___            ___
             &kp ESC    &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(FSLH)       &kp PG_UP     &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  ___
-            &kp LSHFT  XXX        &kp BSPC   &kp RET    ___                &kp LG(LEFT)  &kp LEFT      &kp DOWN  &kp RIGHT      &kp LG(RIGHT)
+            &kp LSHFT  XXX        &kp BSPC   &kp RET    &kp LCTRL          &kp LG(LEFT)  &kp LEFT      &kp DOWN  &kp RIGHT      &kp LG(RIGHT)
             XXX        XXX        XXX        &kp TAB    ___                &kp PG_DN     ___           ___       ___            ___
                                   ___        ___        ___                ___           ___           ___
             >;
@@ -107,7 +114,7 @@
                 &colon        &kp COMMA     &kp DOT    &kp P       &kp Y                    &kp F         &kp G       &kp C   &kp R        &kp L
                 &sft LSHFT A  &hl LMETA O   &kp E      &hl LALT U  &hl LCTRL I              &hr RCTRL D   &hr RALT H  &kp T   &hr RMETA N  &sft RSHFT S
                 &kp SQT       &kp Q         &kp J      &kp K       &kp X                    &kp B         &kp M       &kp W   &kp V        &kp Z
-                                            &kp SPACE  &mo SPR     &sys SYS LG(LS(N4))      &mo SYS       &to DEF     &mo NAVWIN
+                                            &kp SPACE  &mo SPR     &sys SYS LG(LS(N4))      &mo SYS       &win        &mo NAVWIN
             >;
         };
 
@@ -115,7 +122,7 @@
             bindings = <
             ___        ___        ___        ___        ___                ___        ___           ___       ___            ___
             &kp ESC    &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(FSLH)       &kp PG_UP  &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  ___
-            &kp LSHFT  XXX        &kp BSPC   &kp RET    ___                &kp HOME   &kp LEFT      &kp DOWN  &kp RIGHT      &kp END
+            &kp LSHFT  XXX        &kp BSPC   &kp RET    &kp LCTRL          &kp HOME   &kp LEFT      &kp DOWN  &kp RIGHT      &kp END
             XXX        XXX        XXX        &kp TAB    ___                &kp PG_DN  ___           ___       ___            ___
                                   ___        ___        ___                ___        ___           ___
             >;
