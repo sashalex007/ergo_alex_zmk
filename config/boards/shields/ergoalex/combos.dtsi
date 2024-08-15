@@ -14,8 +14,6 @@
 #define SPR_KEY 23
 #define NAV_KEY 45
 #define NUM_KEY 41
-#define NUM_KEY1 11
-#define NUM_KEY2 12
 
 //timing
 #define FAST_TAP 60
@@ -130,5 +128,3 @@
     };
 };
 
-
- 
