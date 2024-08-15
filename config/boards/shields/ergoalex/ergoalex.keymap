@@ -80,7 +80,13 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&to DEF>, <&to WIN>; 
+            bindings = <XXX>, <&to WIN>; 
+        };
+        mac: macos {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <XXX>, <&to DEF>; 
         };
 
     };
@@ -114,7 +120,7 @@
                 &colon        &kp COMMA     &kp DOT    &kp P       &kp Y                    &kp F         &kp G       &kp C   &kp R        &kp L
                 &sft LSHFT A  &hl LMETA O   &kp E      &hl LALT U  &hl LCTRL I              &hr RCTRL D   &hr RALT H  &kp T   &hr RMETA N  &sft RSHFT S
                 &kp SQT       &kp Q         &kp J      &kp K       &kp X                    &kp B         &kp M       &kp W   &kp V        &kp Z
-                                            &kp SPACE  &mo SPR     &sys SYS LG(LS(N4))      &mo SYS       &win        &mo NAVWIN
+                                            &kp SPACE  &mo SPR     &sys SYS LG(LS(N4))      &mo SYS       &mac        &mo NAVWIN
             >;
         };
 
