@@ -105,7 +105,7 @@
         COMBO(double_quote, &kp DQT, 29 30, 80, SLOW_IDLE)
         
         //fast spotlight
-        COMBO(spotlight, &kp RG(SPACE), 28 40, 80, SLOW_IDLE)
+        //COMBO(spotlight, &kp RG(SPACE), 28 40, 80, SLOW_IDLE)
     };
 };
 
