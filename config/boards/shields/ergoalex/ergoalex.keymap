@@ -15,6 +15,7 @@
 #define SPR 5
 #define NUM 6
 #define SYS 7
+#define TABNAV 8
 
 #define TAP 280
 #define IDLE 200
@@ -80,7 +81,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <XXX>, <&to WIN>; 
+            bindings = <&mo TABNAV>, <&to WIN>; 
         };
         mac: macos {
             compatible = "zmk,behavior-tap-dance";
@@ -174,11 +175,11 @@
             >;
         };
 
-        tabs_layer {
+        tab_layer {
             bindings = <
                 ___  ___  ___  ___  ___     ___  ___  ___  ___  ___
-                ___  ___  ___  ___  ___     ___  ___  ___  ___  ___
-                ___  ___  ___  ___  ___     ___  LG(LS(PG_UP))  ___  LG(LS(PG_DN))  ___
+                ___  ___  ___  ___  ___     ___  &kp LC(LS(PG_UP))  ___  &kp LC(LS(PG_DN))  ___
+                ___  ___  ___  ___  ___     ___  &kp LG(LS(PG_UP))  ___  &kp LG(LS(PG_DN))  ___
                 ___  ___  ___  ___  ___     ___  ___  ___  ___  ___
                           ___  ___  ___     ___  ___  ___
             >;
