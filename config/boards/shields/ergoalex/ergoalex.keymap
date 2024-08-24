@@ -15,7 +15,6 @@
 #define SPR 5
 #define NUM 6
 #define SYS 7
-#define TABS 8
 
 #define TAP 280
 #define IDLE 200
