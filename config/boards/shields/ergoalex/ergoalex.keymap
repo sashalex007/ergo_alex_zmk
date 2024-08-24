@@ -81,7 +81,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo TAB>, <&to WIN>; 
+            bindings = <&mo TABS>, <&to WIN>; 
         };
         mac: macos {
             compatible = "zmk,behavior-tap-dance";
