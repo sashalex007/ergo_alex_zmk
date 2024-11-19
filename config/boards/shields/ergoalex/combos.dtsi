@@ -6,7 +6,7 @@
 #define SPR 3
 #define NUM 4
 #define SYS 5
-              
+
 //pseudo-mod-keys
 #define SPL_KEY 26
 #define SPR_KEY 23
@@ -98,10 +98,10 @@
         COMBO(nav_cut, &clh NAV LG(X), NAV_KEY 11, SLOW_TAP, SLOW_IDLE)
         COMBO(nav_copy, &clh NAV LG(C), NAV_KEY 12, SLOW_TAP, SLOW_IDLE)
         COMBO(nav_pas, &clh NAV LG(V), NAV_KEY 13, SLOW_TAP, SLOW_IDLE)
-        
         //fast double quotes
+ 
         COMBO(double_quote, &kp DQT, 29 30, 80, SLOW_IDLE)
-        
+
         //fast spotlight
         //COMBO(spotlight, &kp RG(SPACE), 28 40, 80, SLOW_IDLE)
     };
