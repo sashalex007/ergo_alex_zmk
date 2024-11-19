@@ -13,7 +13,7 @@
 #define SPR 3
 #define NUM 4
 #define SYS 5
-#define TAB 6
+
 
 #define TAP 280
 #define IDLE 200
@@ -34,7 +34,7 @@
                 ;
         };
     };
-    
+        
     behaviors {
         hr: home_row_mod_right_timeless {
             compatible = "zmk,behavior-hold-tap";
