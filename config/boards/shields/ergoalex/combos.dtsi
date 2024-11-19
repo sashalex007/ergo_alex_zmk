@@ -6,7 +6,6 @@
 #define SPR 3
 #define NUM 4
 #define SYS 5
-#define TABNAV 6
 
 //pseudo-mod-keys
 #define SPL_KEY 26
