@@ -13,9 +13,8 @@
 #define SPR 3
 #define NUM 4
 #define SYS 5
-#define TABNAV 6
 
-#define TAP 280
+ 
 #define IDLE 200
 
 / { 
@@ -151,16 +150,6 @@
                 XXX           XXX           XXX           XXX           &sys_reset        &sys_reset   ___  ___  ___  ___
                 &bt BT_CLR    XXX           XXX           XXX           &bootloader       &bootloader  ___  ___  ___  ___
                                             ___           XXX           XXX               ___          ___  ___
-            >;
-        };
-
-        tab_layer {
-            bindings = <
-                ___  ___  ___  ___  ___     ___  ___  ___  ___  ___
-                ___  ___  ___  ___  ___     ___  &kp LC(LEFT)      ___  &kp LC(RIGHT)      ___
-                ___  ___  ___  ___  ___     ___  &kp LG(LA(LEFT))  ___  &kp LG(LA(RIGHT))  ___
-                ___  ___  ___  ___  ___     ___  ___  ___  ___  ___
-                          ___  ___  ___     ___  ___  ___
             >;
         };
 
