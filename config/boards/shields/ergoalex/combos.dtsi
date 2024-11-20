@@ -2,11 +2,13 @@
 //layers
 #define DEF 0
 #define NAV 1
-#define SPL 2
-#define SPR 3
-#define NUM 4
-#define SYS 5
-
+#define WIN 2
+#define NAVWIN 3
+#define SPL 4
+#define SPR 5
+#define NUM 6
+#define SYS 7
+              
 //pseudo-mod-keys
 #define SPL_KEY 26
 #define SPR_KEY 23
@@ -41,7 +43,7 @@
   ╰───────╮ 40  41  42 │ │ 43  44  45 ╭───────╯
           ╰────────────╯ ╰────────────╯         */
 
-/ {
+/ {   
     combos {
         compatible = "zmk,combos";
 
@@ -98,10 +100,10 @@
         COMBO(nav_cut, &clh NAV LG(X), NAV_KEY 11, SLOW_TAP, SLOW_IDLE)
         COMBO(nav_copy, &clh NAV LG(C), NAV_KEY 12, SLOW_TAP, SLOW_IDLE)
         COMBO(nav_pas, &clh NAV LG(V), NAV_KEY 13, SLOW_TAP, SLOW_IDLE)
+        
         //fast double quotes
- 
         COMBO(double_quote, &kp DQT, 29 30, 80, SLOW_IDLE)
-
+        
         //fast spotlight
         //COMBO(spotlight, &kp RG(SPACE), 28 40, 80, SLOW_IDLE)
     };

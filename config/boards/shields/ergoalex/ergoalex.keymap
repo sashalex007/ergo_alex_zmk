@@ -13,7 +13,7 @@
 #define SPR 3
 #define NUM 4
 #define SYS 5
-
+#define TABNAV 6
 
 #define TAP 280
 #define IDLE 200
@@ -34,7 +34,7 @@
                 ;
         };
     };
-        
+    
     behaviors {
         hr: home_row_mod_right_timeless {
             compatible = "zmk,behavior-hold-tap";
@@ -154,6 +154,15 @@
             >;
         };
 
+        tab_layer {
+            bindings = <
+                ___  ___  ___  ___  ___     ___  ___  ___  ___  ___
+                ___  ___  ___  ___  ___     ___  &kp LC(LEFT)      ___  &kp LC(RIGHT)      ___
+                ___  ___  ___  ___  ___     ___  &kp LG(LA(LEFT))  ___  &kp LG(LA(RIGHT))  ___
+                ___  ___  ___  ___  ___     ___  ___  ___  ___  ___
+                          ___  ___  ___     ___  ___  ___
+            >;
+        };
 
         blank_layer {
             bindings = <
