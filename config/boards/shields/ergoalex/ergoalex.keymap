@@ -74,18 +74,6 @@
             tapping-term-ms = <250>;
             bindings = <&mo>, <&kp>;
         };
-        win: windows {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mo TABNAV>, <&to WIN>; 
-        };
-        mac: macos {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <XXX>, <&to DEF>; 
-        };
 
     };
 
@@ -98,7 +86,7 @@
                 &colon        &kp COMMA     &kp DOT     &kp P       &kp Y                    &kp F         &kp G       &kp C       &kp R        &kp L
                 &sft LSHFT A  &hl LMETA O   &hl LCTRL E &hl LALT U  &kp I                    &kp D         &hr RALT H  &hr RCTRL T &hr RMETA N  &sft RSHFT S
                 &kp SQT       &kp Q         &kp J       &kp K       &kp X                    &kp B         &kp M       &kp W       &kp V        &kp Z
-                                            &kp SPACE   &mo NUM     &sys SYS LG(LS(N4))      &mo SYS       &win        &mo NAV
+                                            &kp SPACE   &mo NUM     &sys SYS LG(LS(N4))      &mo SYS       XXX       &mo NAV
             >;
         };
  
