@@ -1,4 +1,4 @@
-#include <behaviors.dtsi>
+tP#include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include "combos.dtsi"
@@ -99,17 +99,17 @@
                                             &kp SPACE   &mo CODE    &sys SYS LG(LS(N4))      &mo SYS       XXX         &mo NAV
             >;
         };
+        };
  
         nav_layer {
             bindings = <
             ___        ___        ___        ___        ___                ___           ___           ___       ___            ___
             &kp ESC    &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(FSLH)       &kp PG_UP     &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &fold
             &kp LSHFT  XXX        &kp BSPC   &kp RET    &kp LCTRL          &kp LG(LEFT)  &kp LEFT      &kp DOWN  &kp RIGHT      &kp LG(RIGHT)
-            XXX        XXX        XXX        &kp TAB    ___                &kp PG_DN     ___           ___       ___            ___
+            XXX        XXX        XXX        &kp TAB    ___                &kp PG_DN     ___           ___       ___            &kp LS(ENTER)
                                   ___        ___        ___                ___           ___           ___
             >;
         };
-
 
         spl_layer {
             bindings = <
@@ -129,7 +129,6 @@
                 ___  ___  ___  ___  ___     ___        &kp DLLR  &kp TILDE  &kp CARET  &kp GRAVE
                           ___  ___  ___     ___        ___       ___
             >;
-        };
 
         numpad_layer {
             bindings = <
@@ -140,6 +139,7 @@
                           ___  ___  ___     ___  ___  ___
             >;
         };
+
 
         sys_layer {
             bindings = <
