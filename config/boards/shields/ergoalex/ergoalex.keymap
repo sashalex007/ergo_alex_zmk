@@ -14,7 +14,7 @@
 #define NUM 4
 #define SYS 5
 #define CODE 6
-#define CODE2 6
+#define CODE2 7
 
 #define TAP 280 
 #define IDLE 200
