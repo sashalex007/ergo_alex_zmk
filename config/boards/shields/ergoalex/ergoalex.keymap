@@ -41,7 +41,7 @@
                 = <&macro_tap &kp LG(K)>
                 , <&macro_tap &kp LG(L)>
                 ;
-        }
+        };
     };
     
     behaviors {
