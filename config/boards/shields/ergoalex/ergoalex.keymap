@@ -34,6 +34,14 @@
                 , <&macro_release &mo MACRO_PLACEHOLDER>
                 ;
         };
+        fold: fold_unfold_vscode {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LG(K)>
+                , <&macro_tap &kp LG(L)>
+                ;
+        }
     };
     
     behaviors {
@@ -95,7 +103,7 @@
         nav_layer {
             bindings = <
             ___        ___        ___        ___        ___                ___           ___           ___       ___            ___
-            &kp ESC    &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(FSLH)       &kp PG_UP     &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  ___
+            &kp ESC    &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(FSLH)       &kp PG_UP     &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &fold
             &kp LSHFT  XXX        &kp BSPC   &kp RET    &kp LCTRL          &kp LG(LEFT)  &kp LEFT      &kp DOWN  &kp RIGHT      &kp LG(RIGHT)
             XXX        XXX        XXX        &kp TAB    ___                &kp PG_DN     ___           ___       ___            ___
                                   ___        ___        ___                ___           ___           ___
@@ -145,11 +153,11 @@
 
         vscode_layer {
             bindings = <
-                ___        ___  ___        ___   ___     ___  ___     ___     ___     ___
-                ___        ___  ___        ___   ___     ___  &kp F5  &kp F3  &kp F6  ___
-                &mo CODE2  ___  ___        ___   ___     ___  &kp F1  &kp F4  &kp F2  ___
-                ___        ___  ___        ___   ___     ___  ___     ___     ___     ___
-                                ___        ___   ___     ___  ___     ___
+                ___        ___  ___        ___        ___     ___  ___     ___     ___     ___
+                ___  &kp LG(B)  &kp LG(J)  ___        ___     ___  &kp F5  &kp F3  &kp F6  ___
+                &mo CODE2  ___  &kp F12    ___        ___     ___  &kp F1  &kp F4  &kp F2  ___
+                ___        ___  ___        ___        ___     ___  ___     ___     ___     ___
+                                ___        ___        ___     ___  ___     ___
             >;
         };
 
@@ -172,6 +180,6 @@
                           ___  ___  ___     ___  ___  ___
             >;
         };
+};
         
     };
-};
