@@ -35,6 +35,8 @@ If you are here for the combo-layer hybrid implementation, jump to [keymap](http
 cmt = comment code
 fld = fold code (vscode)
 jmp = jumpy (vscode)
+wlf = left by word
+wrt = right by word
 
 
                 vscode1 (navigation)
@@ -45,7 +47,7 @@ jmp = jumpy (vscode)
 │ __  __   __    __    __ │ │ __  __        __        __        __     │
 ╰───────╮  __    XX    __ │ │ __  __        __ ╭───────────────────────╯
         ╰─────────────────╯ ╰──────────────────╯
-VS2 = activate vscode2
+VS2 = activate vscode2 layer
 exp = show/hide explorer
 term = show/hind terminal
 win = choose workspace
