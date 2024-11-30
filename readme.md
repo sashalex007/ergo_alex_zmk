@@ -27,12 +27,39 @@ If you are here for the combo-layer hybrid implementation, jump to [keymap](http
                    nav/edit
 ╭─────────────────────╮ ╭────────────────────╮
 │ __  __  __  __  __  │ │ __  __  __  __  __ │
-│ esc cut cpy pst cmt │ │ pup wlf up wrt  __ │
+│ esc cut cpy pst cmt │ │ pup wlf up wrt fld │
 │ sft __  bsp ret ctr │ │ hm  lf  dn rt  end │
-│ __  __  __  tab __  │ │ pdn __  __  __  __ │
+│ __  __  __  tab __  │ │ pdn __  jmp __  __ │
 ╰───────╮ __  __  __  │ │ __  __  XX ╭───────╯
         ╰─────────────╯ ╰────────────╯        
+cmt = comment code
+fld = fold code (vscode)
+jmp = jumpy (vscode)
+
+
+                vscode1 (navigation)
+╭─────────────────────────╮ ╭──────────────────────────────────────────╮
+│ __  __   __    __    __ │ │ __  __        __        __        __     │
+│ __  exp  term  win   __ │ │ __  tab_lf    panel_up  tab_rt    tab_rt │
+│ VS2 __   close open  __ │ │ __  panel_lf  panel_dn  panel_lf  __     │
+│ __  __   __    __    __ │ │ __  __        __        __        __     │
+╰───────╮  __    XX    __ │ │ __  __        __ ╭───────────────────────╯
+        ╰─────────────────╯ ╰──────────────────╯
+VS2 = activate vscode2
+exp = show/hide explorer
+term = show/hind terminal
+win = choose workspace
+close = close tab
+open = chose file to open
+
+             vscode2 (pane management)
+╭─────────────────────╮ ╭──────────────────────────────────────╮
+│ __  __  __  __  __  │ │ __  __        __        __        __ │
+│ __  __  __  __  __  │ │ __  grow      split_up  shrink    __ │
+│ XX  __  __  __  __  │ │ __  split_lf  split_dn  split_rt  __ │
+│ __  __  __  __  __  │ │ __  __        __        __        __ │
+╰───────╮ __  __  __  │ │ __  __        __ ╭───────────────────╯
+        ╰─────────────╯ ╰──────────────────╯        
 
 XX = modifer
-cmt = code comment
 ```
