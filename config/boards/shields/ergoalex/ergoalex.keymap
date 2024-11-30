@@ -101,7 +101,7 @@
         };
     
         nav_layer {
-            bindings = <s
+            bindings = <
             ___        ___        ___        ___        ___                ___           ___           ___            ___            ___
             &kp ESC    &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(FSLH)       &kp PG_UP     &kp LA(LEFT)  &kp UP         &kp LA(RIGHT)  &fold
             &kp LSHFT  XXX        &kp BSPC   &kp RET    &kp LCTRL          &kp LG(LEFT)  &kp LEFT      &kp DOWN       &kp RIGHT      &kp LG(RIGHT)
