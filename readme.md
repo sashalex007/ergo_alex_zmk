@@ -29,7 +29,7 @@ If you are here for the combo-layer hybrid implementation, jump to [keymap](http
 │ __  __  __  __  __  │ │ __  __  __  __  __ │
 │ esc cut cpy pst cmt │ │ pup wlf up wrt fld │
 │ sft __  bsp ret ctr │ │ hm  lf  dn rt  end │
-│ __  __  __  tab __  │ │ pdn __  jmp __  __ │
+│ __  __  __  tab __  │ │ pdn frt jmp co  __ │
 ╰───────╮ __  __  __  │ │ __  __  XX ╭───────╯
         ╰─────────────╯ ╰────────────╯        
 cmt = comment code
@@ -37,6 +37,8 @@ fld = fold code (vscode)
 jmp = jumpy (vscode)
 wlf = left by word
 wrt = right by word
+frt = format code
+co = change all occurences (selection)
 
 
                 vscode1 (navigation)
@@ -62,6 +64,5 @@ open = chose file to open
 │ __  __  __  __  __  │ │ __  __        __        __        __ │
 ╰───────╮ __  __  __  │ │ __  __        __ ╭───────────────────╯
         ╰─────────────╯ ╰──────────────────╯        
-
 XX = modifer
 ```
