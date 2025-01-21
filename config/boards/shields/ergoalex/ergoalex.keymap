@@ -15,6 +15,7 @@
 #define SYS 5
 #define CODE1 6
 #define CODE2 7
+#define QWERTY 8
 
 #define TAP 280 
 #define IDLE 200
@@ -85,6 +86,13 @@
             bindings = <&mo>, <&kp>;
         };
 
+        qwerty: tap_dance_qwerty {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = XXX, <&tog QWERTY>;
+        };
+
     };
 
     keymap {
@@ -96,7 +104,7 @@
                 &colon        &kp COMMA     &kp DOT     &kp P       &kp Y                    &kp F         &kp G       &kp C       &kp R        &kp L
                 &sft LSHFT A  &hl LMETA O   &hl LCTRL E &hl LALT U  &kp I                    &kp D         &hr RALT H  &hr RCTRL T &hr RMETA N  &sft RSHFT S
                 &kp SQT       &kp Q         &kp J       &kp K       &kp X                    &kp B         &kp M       &kp W       &kp V        &kp Z
-                                            &kp SPACE   &mo CODE1   &sys SYS LG(LS(N4))      &mo SYS       XXX         &mo NAV
+                                            &kp SPACE   &mo CODE1   &sys SYS LG(LS(N4))      &mo SYS       &qwerty     &mo NAV
             >;
         };
     
@@ -168,6 +176,16 @@
                 ___  ___  ___  ___  ___     ___  &kp F7         &kp F10  &kp F8          ___
                 ___  ___  ___  ___  ___     ___  ___            ___      ___             ___
                           ___  ___  ___     ___  ___            ___
+            >;
+        };
+
+        qwerty_layer {
+            bindings = <
+                &kp N1        &kp N2  &kp N3     &kp N4     &kp N5                   &kp N6   &kp N7  &kp N8     &kp N9   &kp N0
+                &kp Q         &kp W   &kp E      &kp R      &kp T                    &kp Y    &kp U   &kp I      &kp O    &kp P
+                &sft LSHFT A  &kp S   &kp D      &kp F      &kp G                    &kp H    &kp J   &kp K      &kp L    &sft RSHFT SEMI
+                &kp Z         &kp X   &kp C      &kp V      &kp B                    &kp N    &kp M   &kp COMMA  &kp DOT  &kp FSLH
+                                      &kp SPACE  &mo CODE1  &sys SYS LG(LS(N4))      &mo SYS  &qwerty &mo NAV
             >;
         };
 
