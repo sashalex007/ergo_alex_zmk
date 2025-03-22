@@ -106,5 +106,3 @@
         //COMBO(spotlight, &kp RG(SPACE), 28 40, 80, SLOW_IDLE)
     };
 };
-
-
