@@ -188,11 +188,11 @@
 
         gaming_layer {
             bindings = <
-                &kp N1   &kp N2     &kp N3     &kp N4  &kp N5       &kp F1  &kp N7  &kp N8     &kp N9  &kp N0
-                &colon   &kp COMMA  &kp DOT    &kp P   &kp Y        &kp F   &kp G   &kp C      &kp R   &kp L
-                &kp A    &kp O      &kp E      &kp U   &kp I        &kp D   &kp H   &kp T      &kp N   &kp S
-                &kp SQT  &kp Q      &kp J      &kp K   &kp X        &kp B   &kp M   &kp W      &kp V   &kp Z
-                                    &kp SPACE  XXX     XXX          XXX     &game   &kp SPACE
+                &kp N1   &kp N2     &kp N3     &kp N4    &kp N5       &kp N6  &kp N7  &kp N8     &kp N9  &kp N0
+                &kp ESC  &kp COMMA  &kp DOT    &kp P     &kp Y        &kp F   &kp G   &kp C      &kp R   &kp L
+                &kp A    &kp O      &kp E      &kp U     &kp I        &kp D   &kp H   &kp T      &kp N   &kp S
+                &kp SQT  &kp Q      &kp J      &kp K     &kp X        &kp B   &kp M   &kp W      &kp V   &kp Z
+                                    &kp SPACE  &kp BSPC  XXX          XXX     &game   &kp SPACE
             >;
         };
 
