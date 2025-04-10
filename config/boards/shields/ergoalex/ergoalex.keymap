@@ -16,6 +16,7 @@
 #define CODE1 6
 #define CODE2 7
 #define GAME 8
+#define WINNAV 9
 
 #define TAP 280 
 #define IDLE 200
@@ -90,7 +91,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&none>, <&tog GAME>;
+            bindings = <&lt WINNAV LS(LG(SPACE))>, <&tog GAME>;
         };
 
         // screen: screenshot_screenrecord {
@@ -196,6 +197,16 @@
             >;
         };
 
+        window_nav_layer {
+            bindings = <
+                ___  ___  ___  ___  ___     ___  ___  ___  ___  ___
+                ___  ___  ___  ___  ___     ___  ___  ___  ___  ___
+                ___  ___  ___  ___  ___     ___  &kp LC(LEFT)  ___  &kp LC(RIGHT)  ___
+                ___  ___  ___  ___  ___     ___  ___  ___  ___  ___
+                          ___  ___  ___     ___  ___  ___
+            >;
+        };
+
         // qwerty_layer {
         //     bindings = <
         //         &kp N1        &kp N2  &kp N3     &kp N4     &kp N5                   &kp N6   &kp N7  &kp N8     &kp N9   &kp N0
@@ -217,5 +228,5 @@
         };
 
     };
-};
+
 
