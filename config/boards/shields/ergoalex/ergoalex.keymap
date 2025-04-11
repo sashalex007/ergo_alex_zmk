@@ -68,6 +68,7 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 40>; 
         }; 
+
         hl: home_row_mod_left_timeless {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -105,12 +106,12 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <90>;
+            tapping-term-ms = <60>;
             bindings = <&alt_tab>, <&kp>;
             display-name = "My-Layer-Tap";
         };
-        multi: multi_purpose {
 
+        multi: multi_purpose {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
