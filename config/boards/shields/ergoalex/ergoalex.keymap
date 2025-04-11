@@ -65,6 +65,7 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 35 36 37 38 39>; 
         };
+
         colon: colon {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -79,6 +80,7 @@
             tapping-term-ms = <150>;
             bindings = <&kp>, <&kp>; 
         };
+
         sys: system {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -87,19 +89,21 @@
             bindings = <&mo>, <&kp>;
         };
 
-        game: tap_dance_game {
+        my_lt: my_layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&mo>, <&kp>;
+            display-name = "My-Layer-Tap";
+        };
+
+        multi: multi_purpose {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&lt WINNAV LS(LG(SPACE))>, <&tog GAME>;
+            bindings = <&my_lt WINNAV LS(LG(SPACE))>, <&tog GAME>;
         };
-
-        // screen: screenshot_screenrecord {
-        //     compatible = "zmk,behavior-tap-dance";
-        //     #binding-cells = <0>;
-        //     tapping-term-ms = <200>;
-        //     bindings = <&none>, <&tog QWERTY>;
-        // };
 
     };
 
@@ -112,7 +116,7 @@
                 &colon        &kp COMMA     &kp DOT     &kp P       &kp Y                    &kp F               &kp G       &kp C       &kp R        &kp L
                 &sft LSHFT A  &hl LMETA O   &hl LCTRL E &hl LALT U  &kp I                    &kp D               &hr RALT H  &hr RCTRL T &hr RMETA N  &sft RSHFT S
                 &kp SQT       &kp Q         &kp J       &kp K       &kp X                    &kp B               &kp M       &kp W       &kp V        &kp Z
-                                            &kp SPACE   &mo CODE1   &sys SYS LG(LS(N4))      &sys SYS LG(LS(N5)) &game       &mo NAV
+                                            &kp SPACE   &mo CODE1   &sys SYS LG(LS(N4))      &sys SYS LG(LS(N5)) &multi      &mo NAV
             >;
         };
     
@@ -193,7 +197,7 @@
                 &kp &colon  &kp COMMA  &kp DOT    &kp P     &kp Y     &kp F   &kp G   &kp C      &kp R   &kp L
                 &kp A       &kp O      &kp E      &kp U     &kp I     &kp D   &kp H   &kp T      &kp N   &kp S
                 &kp SQT     &kp Q      &kp J      &kp K     &kp X     &kp B   &kp M   &kp W      &kp V   &kp Z
-                                       &kp SPACE  &kp BSPC  XXX       XXX     &game   &kp SPACE
+                                       &kp SPACE  &kp BSPC  XXX       XXX     &multi  &kp SPACE
             >;
         };
 
