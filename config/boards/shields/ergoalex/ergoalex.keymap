@@ -103,7 +103,7 @@
 
         sc_at: shortcat_alttab_holdtap {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <120>;
             bindings = <&alt_tab>, <&kp>;
