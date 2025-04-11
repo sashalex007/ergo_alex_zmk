@@ -119,12 +119,12 @@
             display-name = "shortcat-alttab-holdtap";
         };
 
-        multi: multi_purpose {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&sc_at 0 LS(LG(SPACE))>, <&tog GAME>;
-        };
+        // multi: multi_purpose {
+        //     compatible = "zmk,behavior-tap-dance";
+        //     #binding-cells = <0>;
+        //     tapping-term-ms = <200>;
+        //     bindings = <&sc_at 0 LS(LG(SPACE))>, <&tog GAME>;
+        // };
 
     };
 
