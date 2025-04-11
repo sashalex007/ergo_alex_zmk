@@ -134,10 +134,6 @@
     
         nav_layer {
             bindings = <
-            ___        _
-
-            alt_tab {
-            bindings = <
                 &kp N1        &kp N2        &kp N3      &kp N4      &kp N5                   &kp N6              &kp N7      &kp N8      &kp N9       &kp N0
                 &colon        &kp COMMA     &kp DOT     &kp P       &kp Y                    &kp F               &kp G       &kp C       &kp R        &kp L
                 &sft LSHFT A  &hl LMETA O   &hl LCTRL E &hl LALT U  &kp I                    &kp D               &hr RALT H  &hr RCTRL T &hr RMETA N  &sft RSHFT S
