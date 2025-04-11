@@ -56,6 +56,14 @@
                 , <&macro_tap &kp LG(L)>
                 ;
         };
+
+        sc_at: shortcat_alttab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &sc_at_ht 0 LS(LG(SPACE))>
+                ;
+        };
     };
     
     behaviors {
@@ -102,13 +110,13 @@
             bindings = <&mo>, <&kp>;
         };
 
-        sc_at: shortcat_alttab_holdtap {
+        sc_at_ht: shortcat_alttab_holdtap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <60>;
             bindings = <&alt_tab>, <&kp>;
-            display-name = "My-Layer-Tap";
+            display-name = "shortcat-alttab-holdtap";
         };
 
         multi: multi_purpose {
@@ -129,7 +137,7 @@
                 &colon        &kp COMMA     &kp DOT     &kp P       &kp Y                    &kp F               &kp G       &kp C       &kp R        &kp L
                 &sft LSHFT A  &hl LMETA O   &hl LCTRL E &hl LALT U  &kp I                    &kp D               &hr RALT H  &hr RCTRL T &hr RMETA N  &sft RSHFT S
                 &kp SQT       &kp Q         &kp J       &kp K       &kp X                    &kp B               &kp M       &kp W       &kp V        &kp Z
-                                            &kp SPACE   &mo CODE1   &sys SYS LG(LS(N4))      &sys SYS LG(LS(N5)) &sc_at 0 LS(LG(SPACE))      &mo NAV
+                                            &kp SPACE   &mo CODE1   &sys SYS LG(LS(N4))      &sys SYS LG(LS(N5)) &sc_at      &mo NAV
             >;
         };
    
