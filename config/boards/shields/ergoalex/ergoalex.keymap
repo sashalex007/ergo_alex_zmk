@@ -61,7 +61,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &sc_at_ht 0 LS(LG(SPACE))>
+                = <&macro_press &sc_at_ht 0 LS(LG(SPACE))>
                 ;
         };
     };
@@ -113,7 +113,7 @@
         sc_at_ht: shortcat_alttab_holdtap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "tap-preferred";
             tapping-term-ms = <60>;
             bindings = <&alt_tab>, <&kp>;
             display-name = "shortcat-alttab-holdtap";
