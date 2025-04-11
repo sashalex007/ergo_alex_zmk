@@ -101,12 +101,12 @@
             bindings = <&mo>, <&kp>;
         };
 
-        my_lt: my_layer_tap {
+        sc_at: shortcat_alttab_holdtap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <0>;
             flavor = "tap-preferred";
             tapping-term-ms = <120>;
-            bindings = <&alt_tab>, <&kp LS(LG(SPACE))>;
+            bindings = <&alt_tab>, <&kp>;
             display-name = "My-Layer-Tap";
         };
 
@@ -114,7 +114,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&my_lt>, <&tog GAME>;
+            bindings = <&sc_at 0 LS(LG(SPACE))>, <&tog GAME>;
         };
 
     };
