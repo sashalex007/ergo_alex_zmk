@@ -103,10 +103,10 @@
 
         my_lt: my_layer_tap {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             flavor = "tap-preferred";
             tapping-term-ms = <120>;
-            bindings = <&mo>, <&kp>;
+            bindings = <&alt_tab>, <&kp LS(LG(SPACE))>;
             display-name = "My-Layer-Tap";
         };
 
@@ -114,7 +114,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&my_lt (&alt_tab) (LS(LG(SPACE)))>, <&tog GAME>;
+            bindings = <&my_lt>, <&tog GAME>;
         };
 
     };
