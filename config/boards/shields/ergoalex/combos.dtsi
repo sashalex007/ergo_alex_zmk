@@ -6,6 +6,10 @@
 #define SPR 3
 #define NUM 4
 #define SYS 5
+#define CODE1 6
+#define CODE2 7
+#define GAME 8
+#define WINNAV 9
               
 //pseudo-mod-keys
 #define SPL_KEY 26
@@ -101,6 +105,9 @@
         
         //fast double quotes
         COMBO(double_quote, &kp DQT, 29 30, 80, SLOW_IDLE)
+
+        //toggle game layer
+        COMBO(toggle_game, &tog GAME, 41 44, 80, SLOW_IDLE)
         
         //fast spotlight
         //COMBO(spotlight, &kp RG(SPACE), 28 40, 80, SLOW_IDLE)

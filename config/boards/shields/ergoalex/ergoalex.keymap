@@ -59,7 +59,7 @@
 
     };
     
-    behaviors {
+    behaviors {    
         hr: home_row_mod_right_timeless {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -126,19 +126,19 @@
 
         default_layer {
             bindings = <
-                &kp N1        &kp N2        &kp N3      &kp N4      &kp N5                   &kp N6              &kp N7      &kp N8      &kp N9       &kp N0
-                &colon        &kp COMMA     &kp DOT     &kp P       &kp Y                    &kp F               &kp G       &kp C       &kp R        &kp L
-                &sft LSHFT A  &hl LMETA O   &hl LCTRL E &hl LALT U  &kp I                    &kp D               &hr RALT H  &hr RCTRL T &hr RMETA N  &sft RSHFT S
-                &kp SQT       &kp Q         &kp J       &kp K       &kp X                    &kp B               &kp M       &kp W       &kp V        &kp Z
-                                            &kp SPACE   &mo CODE1   &sys SYS LG(LS(N4))      &sys SYS LG(LS(N5)) &sc_at 0 LS(LG(SPACE))  &mo NAV
+                &kp N1        &kp N2        &kp N3      &kp N4      &kp N5                   &kp N6               &kp N7      &kp N8      &kp N9       &kp N0
+                &colon        &kp COMMA     &kp DOT     &kp P       &kp Y                    &kp F                &kp G       &kp C       &kp R        &kp L
+                &sft LSHFT A  &hl LMETA O   &hl LCTRL E &hl LALT U  &kp I                    &kp D                &hr RALT H  &hr RCTRL T &hr RMETA N  &sft RSHFT S
+                &kp SQT       &kp Q         &kp J       &kp K       &kp X                    &kp B                &kp M       &kp W       &kp V        &kp Z
+                                            &kp SPACE   &mo CODE1   &sys SYS LG(LS(N4))      &sys SYS LG(LS(N5))  &sc_at 0 LS(LG(SPACE))  &mo NAV
             >;
         };
    
         nav_layer {
             bindings = <
-            ___        ___        ___        ___        ___                ___           ___            ___            ___            ___
-            &kp ESC    &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(FSLH)       &kp PG_UP     &kp LA(LEFT)   &kp UP         &kp LA(RIGHT)  &fold
-            &kp LSHFT  XXX        &kp BSPC   &kp RET    &kp LCTRL          &kp LG(LEFT)  &kp LEFT       &kp DOWN       &kp RIGHT      &kp LG(RIGHT)
+            ___        ___        ___        ___        ___                ___           ___            ___         ___            ___
+            &kp ESC    &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(FSLH)       &kp PG_UP     &kp LA(LEFT)   &kp UP      &kp LA(RIGHT)  &fold
+            &kp LSHFT  XXX        &kp BSPC   &kp RET    &kp LCTRL          &kp LG(LEFT)  &kp LEFT       &kp DOWN    &kp RIGHT      &kp LG(RIGHT)
             XXX        XXX        XXX        &kp TAB    ___                &kp PG_DN     &kp LA(LS(F))  &kp LC(N2)  &kp LG(F2)     ___ 
                                   ___        ___        ___                ___           ___            ___
             >;
@@ -173,7 +173,6 @@
                           ___  ___  ___     ___  ___  ___
             >;
         };
-
 
         sys_layer {
             bindings = <
