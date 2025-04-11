@@ -105,12 +105,12 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <120>;
+            tapping-term-ms = <90>;
             bindings = <&alt_tab>, <&kp>;
             display-name = "My-Layer-Tap";
         };
-
         multi: multi_purpose {
+
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
@@ -135,7 +135,6 @@
         nav_layer {
             bindings = <
             ___        ___        ___        ___        ___                ___           ___            ___            ___            ___
-
             &kp ESC    &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(FSLH)       &kp PG_UP     &kp LA(LEFT)   &kp UP         &kp LA(RIGHT)  &fold
             &kp LSHFT  XXX        &kp BSPC   &kp RET    &kp LCTRL          &kp LG(LEFT)  &kp LEFT       &kp DOWN       &kp RIGHT      &kp LG(RIGHT)
             XXX        XXX        XXX        &kp TAB    ___                &kp PG_DN     &kp LA(LS(F))  &kp LC(N2)  &kp LG(F2)     ___ 
