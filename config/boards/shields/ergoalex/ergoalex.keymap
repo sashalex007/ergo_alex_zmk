@@ -104,7 +104,7 @@
         sc_at: shortcat_alttab_holdtap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "hold-preferred";
             tapping-term-ms = <120>;
             bindings = <&alt_tab>, <&kp>;
             display-name = "My-Layer-Tap";
@@ -216,10 +216,10 @@
 
         window_nav_layer {
             bindings = <
-                ___  ___  ___  ___  ___     ___  ___        ___       ___       ___
-                ___  ___  ___  ___  ___     ___  ___        &kp UP    ___       ___
-                ___  ___  ___  ___  ___     ___  &kp RIGHT  &kp DOWN  &kp LEFT  ___
-                ___  ___  ___  ___  ___     ___  ___  ___  ___  ___
+                ___  ___  ___  ___  ___     ___  ___       ___       ___        ___
+                ___  ___  ___  ___  ___     ___  ___       &kp UP    ___        ___
+                ___  ___  ___  ___  ___     ___  &kp LEFT  &kp DOWN  &kp RIGHT  ___
+                ___  ___  ___  ___  ___     ___  ___       ___       ___        ___
                           ___  ___  ___     ___  ___  ___
             >;
         };
