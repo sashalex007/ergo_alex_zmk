@@ -107,17 +107,10 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <60>;
+            tapping-term-ms = <90>;
             bindings = <&alt_tab>, <&kp>;
             display-name = "shortcat-alttab-holdtap";
         };
-
-        // multi: multi_purpose {
-        //     compatible = "zmk,behavior-tap-dance";
-        //     #binding-cells = <0>;
-        //     tapping-term-ms = <200>;
-        //     bindings = <&sc_at 0 LS(LG(SPACE))>, <&tog GAME>;
-        // };
 
     };
 
