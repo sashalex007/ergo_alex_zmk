@@ -110,6 +110,7 @@
             tapping-term-ms = <90>;
             bindings = <&alt_tab>, <&kp>;
             display-name = "shortcat-alttab-holdtap";
+            retro-tap = <true>;
         };
 
     };
