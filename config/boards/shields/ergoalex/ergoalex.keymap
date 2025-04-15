@@ -47,6 +47,14 @@
                 ;
         };
 
+        vol_up: volume_up_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp C_VOL_UP>
+                ;
+        };
+
         fold: fold_unfold_vscode {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -85,13 +93,6 @@
             bindings = <&kp COLON>, <&kp SEMI>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
-        pp: play_pause {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp C_VOL_UP>, <&kp C_VOL_UP>;
-            mods = <(MOD_LALT|MOD_RALT)>;
-        };        
 
         sft: shift {
             compatible = "zmk,behavior-hold-tap";
@@ -207,7 +208,7 @@
         window_nav_layer {
             bindings = <
                 ___  ___      ___      ___  ___                ___  ___       ___       ___        ___
-                ___  ___      ___      &pp  ___                ___  ___       &kp UP    ___        ___
+                ___  ___      ___      &vol_up  ___            ___  ___       &kp UP    ___        ___
                 ___  ___      ___      ___  ___                ___  &kp LEFT  &kp DOWN  &kp RIGHT  ___
                 ___  ___      ___      ___  ___                ___  ___       ___       ___        ___
                               ___      ___  ___                ___  ___       ___
