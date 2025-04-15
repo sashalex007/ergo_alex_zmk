@@ -86,6 +86,13 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
+        ig_a: ignore_alt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <2>;
+            bindings = <&none>, <&kp>;
+            mods = <(MOD_LALT)>;
+        };
+
         sft: shift {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -199,11 +206,11 @@
 
         window_nav_layer {
             bindings = <
-                ___  ___           ___           ___       ___       ___  ___       ___       ___        ___
-                ___  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP  ___       ___  ___       &kp UP    ___        ___
-                ___  ___           ___           ___       ___       ___  &kp LEFT  &kp DOWN  &kp RIGHT  ___
-                ___  ___           ___           ___       ___       ___  ___       ___       ___        ___
-                                   ___           ___       ___       ___  ___       ___
+                ___  ___               ___               ___           ___       ___  ___       ___       ___        ___
+                ___  &ig_a 0 C_VOL_DN  &ig_a 0 C_VOL_UP  &ig_a 0 C_PP  ___       ___  ___       &kp UP    ___        ___
+                ___  ___               ___               ___           ___       ___  &kp LEFT  &kp DOWN  &kp RIGHT  ___
+                ___  ___               ___               ___           ___       ___  ___       ___       ___        ___
+                                       ___               ___           ___       ___  ___       ___
             >;
         };
 
