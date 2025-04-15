@@ -89,7 +89,7 @@
         pp: play_pause {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&none>, <&kp C_PP>;
+            bindings = <&kp C_VOL_UP>, <&kp C_VOL_UP>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };        
 
@@ -206,11 +206,11 @@
 
         window_nav_layer {
             bindings = <
-                ___  ___      ___      ___  ___       ___  ___       ___       ___        ___
-                ___  ___      ___      &pp  ___       ___  ___       &kp UP    ___        ___
-                ___  ___      ___      ___  ___       ___  &kp LEFT  &kp DOWN  &kp RIGHT  ___
-                ___  ___      ___      ___  ___       ___  ___       ___       ___        ___
-                              ___      ___  ___       ___  ___       ___
+                ___  ___      ___      ___  ___                ___  ___       ___       ___        ___
+                ___  ___      ___      &pp  ___                ___  ___       &kp UP    ___        ___
+                ___  ___      ___      ___  ___                ___  &kp LEFT  &kp DOWN  &kp RIGHT  ___
+                ___  ___      ___      ___  ___                ___  ___       ___       ___        ___
+                              ___      ___  ___                ___  ___       ___
             >;
         };
 
