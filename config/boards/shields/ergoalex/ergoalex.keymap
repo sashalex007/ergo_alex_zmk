@@ -86,25 +86,11 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        vol_up: volume_up {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&none>, <&kp C_VOL_UP>;
-            mods = <(MOD_LALT)>;
-        };
-
-        vol_dn: volume_down {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&none>, <&kp C_VOL_DN>;
-            mods = <(MOD_LALT)>;
-        };
-
         pp: play_pause {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&none>, <&kp C_PP>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LALT|MOD_RALT)>;
         };        
 
         sft: shift {
@@ -221,7 +207,7 @@
         window_nav_layer {
             bindings = <
                 ___  ___      ___      ___  ___       ___  ___       ___       ___        ___
-                ___  &vol_up  &vol_dn  &pp  ___       ___  ___       &kp UP    ___        ___
+                ___  ___      ___      &pp  ___       ___  ___       &kp UP    ___        ___
                 ___  ___      ___      ___  ___       ___  &kp LEFT  &kp DOWN  &kp RIGHT  ___
                 ___  ___      ___      ___  ___       ___  ___       ___       ___        ___
                               ___      ___  ___       ___  ___       ___
