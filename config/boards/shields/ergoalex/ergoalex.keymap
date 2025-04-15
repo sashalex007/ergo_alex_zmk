@@ -47,13 +47,13 @@
                 ;
         };
 
-        vol_up: volume_up_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+        md: media_macro {
+            compatible = "zmk,behavior-macro-one_param";
+            #binding-cells = <1>;
             bindings
                 = <&macro_release &kp LALT>
-                , <&macro_tap &kp C_VOL_UP>
-                , <&macro_press &kp LALT>
+                , <&macro_param_1to1>
+                , <&macro_tap &kp MACRO_PLACEHOLDER>
                 ;
         };
 
@@ -209,11 +209,11 @@
 
         window_nav_layer {
             bindings = <
-                ___  ___      ___      ___  ___                ___  ___       ___       ___        ___
-                ___  ___      ___      &vol_up  ___            ___  ___       &kp UP    ___        ___
-                ___  ___      ___      ___  ___                ___  &kp LEFT  &kp DOWN  &kp RIGHT  ___
-                ___  ___      ___      ___  ___                ___  ___       ___       ___        ___
-                              ___      ___  ___                ___  ___       ___
+                ___  ___      ___      ___  ___                           ___  ___       ___       ___        ___
+                ___  &md C_VOL_DN  &md C_VOL_UP  &md C_PP  ___            ___  ___       &kp UP    ___        ___
+                ___  ___      ___      ___  ___                           ___  &kp LEFT  &kp DOWN  &kp RIGHT  ___
+                ___  ___      ___      ___  ___                           ___  ___       ___       ___        ___
+                              ___      ___  ___                           ___  ___       ___
             >;
         };
 
