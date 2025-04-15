@@ -89,7 +89,7 @@
         ig_a: ignore_alt {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <2>;
-            bindings = <&none>, <&kp>;
+            bindings = <&kp>, <&kp>;
             mods = <(MOD_LALT)>;
         };
 
