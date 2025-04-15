@@ -4,18 +4,16 @@
 #define NAV 1
 #define SPL 2
 #define SPR 3
-#define NUM 4
-#define SYS 5
-#define CODE1 6
-#define CODE2 7
-#define GAME 8
-#define WINNAV 9
+#define SYS 4
+#define CODE1 5
+#define CODE2 6
+#define GAME 7
+#define WINNAV 8
               
 //pseudo-mod-keys
 #define SPL_KEY 26
 #define SPR_KEY 23
 #define NAV_KEY 45
-#define NUM_KEY 41
 
 //timing
 #define FAST_TAP 60
