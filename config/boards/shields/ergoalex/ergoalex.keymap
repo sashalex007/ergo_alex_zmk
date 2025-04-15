@@ -53,6 +53,7 @@
             bindings
                 = <&macro_release &kp LALT>
                 , <&macro_tap &kp C_VOL_UP>
+                , <&macro_press &kp LALT>
                 ;
         };
 
