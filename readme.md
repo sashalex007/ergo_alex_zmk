@@ -67,17 +67,20 @@ open = chose file to open
 
 XX = modifer
 
-                    OS navigation         
-╭─────────────────────────╮ ╭───────────────────────────────╮
-│ __  __    __    __  __  │ │ __  __       __   __       __ │
-│ __  vold  volu  pp  __  │ │ __  tab_lft  up   tab_rgt  __ │
-│ __  __    __    __  __  │ │ __  left     dwn  right    __ │
-│ __  __    __    __  __  │ │ __  __       __   __       __ │
-╰───────╮   __    __  __  │ │ __  YY       __  ╭────────────╯
-        ╰─────────────────╯ ╰──────────────────╯        
+                       OS navigation         
+╭───────────────────────────╮ ╭───────────────────────────────╮
+│ __    __    __    __  __  │ │ __  __       __   __       __ │
+│ prev  vold  volu  pp  nxt │ │ __  tab_lft  up   tab_rgt  __ │
+│ __    __    __    __  __  │ │ __  left     dwn  right    __ │
+│ __    __    __    __  __  │ │ __  __       __   __       __ │
+╰───────╮     __    __  __  │ │ __  YY       __  ╭────────────╯
+        ╰───────────────────╯ ╰──────────────────╯        
 
+prev = previous track
 vold = volume down
 volu = volume up
+pp = play/pause
+nxt = next track
 tab_lft = chrome tab left
 tab_rgt = chrome tab right
 up/down/left = alttab navigation (macos window management app)
