@@ -80,8 +80,8 @@ vold = volume down
 volu = volume up
 tab_lft = chrome tab left
 tab_rgt = chrome tab right
-up/down/left = alttab navigation
-YY(hold) = Activate OS navigation layer and activate alttab
-YY(tap) = Activate shortcat
+up/down/left = alttab navigation (macos window management app)
+YY(hold) = activate OS navigation layer and activate alttab
+YY(tap) = activate shortcat (macos bigram navigation app) 
 
 ```

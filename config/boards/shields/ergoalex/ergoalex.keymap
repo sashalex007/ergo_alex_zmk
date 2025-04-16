@@ -210,7 +210,7 @@
         os_nav_layer {
             bindings = <
                 ___  ___           ___           ___       ___            ___  ___               ___       ___                ___
-                ___  &ia C_VOL_DN  &ia C_VOL_UP  &ia C_PP  ___            ___  &ia LC(LA(LEFT))  &kp UP    &ia LC(LA(RIGHT))  ___
+                ___  &ia C_VOL_DN  &ia C_VOL_UP  &ia C_PP  ___            ___  &ia LG(LA(LEFT))  &kp UP    &ia LG(LA(RIGHT))  ___
                 ___  ___           ___           ___       ___            ___  &kp LEFT          &kp DOWN  &kp RIGHT          ___
                 ___  ___           ___           ___       ___            ___  ___               ___       ___                ___
                                    ___           ___       ___            ___  ___               ___
