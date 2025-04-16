@@ -62,7 +62,26 @@ open = chose file to open
 │ __  __  __  __  __  │ │ __  grow      split_up  shrink    __ │
 │ XX  __  __  __  __  │ │ __  split_lf  split_dn  split_rt  __ │
 │ __  __  __  __  __  │ │ __  __        __        __        __ │
-╰───────╮ __  __  __  │ │ __  __        __ ╭───────────────────╯
+╰───────╮ __  XX  __  │ │ __  __        __ ╭───────────────────╯
         ╰─────────────╯ ╰──────────────────╯        
+
 XX = modifer
+
+                    OS navigation         
+╭─────────────────────────╮ ╭───────────────────────────────╮
+│ __  __    __    __  __  │ │ __  __       __   __       __ │
+│ __  vold  volu  pp  __  │ │ __  tab_lft  up   tab_rgt  __ │
+│ __  __    __    __  __  │ │ __  left     dwn  right    __ │
+│ __  __    __    __  __  │ │ __  __       __   __       __ │
+╰───────╮   __    __  __  │ │ __  YY       __  ╭────────────╯
+        ╰─────────────────╯ ╰──────────────────╯        
+
+vold = volume down
+volu = volume up
+tab_lft = chrome tab left
+tab_rgt = chrome tab right
+up/down/left = alttab navigation
+YY(hold) = Activate OS navigation layer and activate alttab
+YY(tap) = Activate shortcat
+
 ```

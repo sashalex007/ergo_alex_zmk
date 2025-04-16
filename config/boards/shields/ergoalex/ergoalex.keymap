@@ -15,7 +15,7 @@
 #define CODE1 5
 #define CODE2 6
 #define GAME 7
-#define WINNAV 8
+#define OSNAV 8
 
 #define TAP 280 
 #define IDLE 200
@@ -40,10 +40,10 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &mo WINNAV &kp LALT>
+                = <&macro_press &mo OSNAV &kp LALT>
                 , <&macro_tap &kp N1>
                 , <&macro_pause_for_release>
-                , <&macro_release &mo WINNAV &kp LALT>
+                , <&macro_release &mo OSNAV &kp LALT>
                 ;
         };
 
@@ -207,13 +207,13 @@
             >;
         };
 
-        window_nav_layer {
+        os_nav_layer {
             bindings = <
-                ___  ___      ___      ___  ___                           ___  ___       ___       ___        ___
-                ___  &ia C_VOL_DN  &ia C_VOL_UP  &ia C_PP  ___            ___  &ia LC(LA(LEFT))       &kp UP    &ia LC(LA(RIGHT))        ___
-                ___  ___      ___      ___  ___                           ___  &kp LEFT  &kp DOWN  &kp RIGHT  ___
-                ___  ___      ___      ___  ___                           ___  ___       ___       ___        ___
-                              ___      ___  ___                           ___  ___       ___
+                ___  ___           ___           ___       ___            ___  ___               ___       ___                ___
+                ___  &ia C_VOL_DN  &ia C_VOL_UP  &ia C_PP  ___            ___  &ia LC(LA(LEFT))  &kp UP    &ia LC(LA(RIGHT))  ___
+                ___  ___           ___           ___       ___            ___  &kp LEFT          &kp DOWN  &kp RIGHT          ___
+                ___  ___           ___           ___       ___            ___  ___               ___       ___                ___
+                                   ___           ___       ___            ___  ___               ___
             >;
         };
 

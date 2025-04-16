@@ -8,7 +8,7 @@
 #define CODE1 5
 #define CODE2 6
 #define GAME 7
-#define WINNAV 8
+#define OSNAV 8
               
 //pseudo-mod-keys
 #define SPL_KEY 26
