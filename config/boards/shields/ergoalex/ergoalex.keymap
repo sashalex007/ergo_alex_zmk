@@ -47,7 +47,7 @@
                 ;
         };
 
-        md: media_macro {
+        ia: ignore_alt_macro {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings
@@ -210,7 +210,7 @@
         window_nav_layer {
             bindings = <
                 ___  ___      ___      ___  ___                           ___  ___       ___       ___        ___
-                ___  &md C_VOL_DN  &md C_VOL_UP  &md C_PP  ___            ___  ___       &kp UP    ___        ___
+                ___  &ia C_VOL_DN  &ia C_VOL_UP  &ia C_PP  ___            ___  &ia LC(LA(LEFT))       &kp UP    &ia LC(LA(RIGHT))        ___
                 ___  ___      ___      ___  ___                           ___  &kp LEFT  &kp DOWN  &kp RIGHT  ___
                 ___  ___      ___      ___  ___                           ___  ___       ___       ___        ___
                               ___      ___  ___                           ___  ___       ___
