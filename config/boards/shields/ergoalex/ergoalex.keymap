@@ -48,7 +48,7 @@
         };
 
         md: media_macro {
-            compatible = "zmk,behavior-macro-one_param";
+            compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings
                 = <&macro_release &kp LALT>
