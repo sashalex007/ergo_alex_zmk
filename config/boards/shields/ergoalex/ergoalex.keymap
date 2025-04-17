@@ -116,7 +116,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             bindings = <&alt_tab>, <&kp>;
             display-name = "shortcat-alttab-holdtap";
             hold-while-undecided;
@@ -186,7 +186,7 @@
                                       ___        ___        ___                     ___  ___     ___
             >;
         };
-        
+
         vscode_layer2 {
             bindings = <
                 ___  ___  ___  ___  ___     ___  ___            ___      ___             ___
