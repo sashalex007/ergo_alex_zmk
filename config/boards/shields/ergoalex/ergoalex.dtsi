@@ -4,18 +4,7 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
-        zmk,battery = &vbatt0;
     };
-
-    vbatt0: vbatt {
-        compatible = "zmk,battery-voltage-divider";
-        label = "BATTERY";
-        io-channels = <&adc 4>;
-        output-ohms = <2000000>;
-        full-ohms = <(2000000+806000)>;
-        power-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH)>;
-    };
-
 
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
