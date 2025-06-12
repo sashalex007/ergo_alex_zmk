@@ -1,7 +1,7 @@
 if SHIELD_ERGOALEX_RIGHT
 
     config ZMK_KEYBOARD_NAME
-        default "ergoalex_choc"
+        default "ergoalex"
 
     config ZMK_SPLIT_BLE_ROLE_CENTRAL
         default y
