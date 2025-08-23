@@ -24,6 +24,8 @@
         clh: combo_layer_hybrid {
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_param_1to1>
                 , <&macro_press &mo MACRO_PLACEHOLDER>
