@@ -5,10 +5,10 @@
 #define SPL 2
 #define SPR 3
 #define SYS 4
-#define CODE1 5
-#define CODE2 6
+#define CODE 5
+#define OSNAV 6
 #define GAME 7
-#define OSNAV 8
+
               
 //pseudo-mod-keys
 #define SPL_KEY 26
