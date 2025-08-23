@@ -47,7 +47,7 @@ co = change all occurences (selection)
 │ __  exp  term  win   __ │ │ __  tab_lf    panel_up  tab_rt    tab_rt │
 │ VS2 __   close open  __ │ │ __  panel_lf  panel_dn  panel_lf  __     │
 │ __  __   __    __    __ │ │ __  __        __        __        __     │
-o╰───────╮  __    XX    __ │ │ __  __        __ ╭───────────────────────╯
+╰───────╮  __    XX    __ │ │ __  __        __ ╭───────────────────────╯
         ╰─────────────────╯ ╰──────────────────╯
 VS2 = activate vscode2 layer
 exp = show/hide explorer
