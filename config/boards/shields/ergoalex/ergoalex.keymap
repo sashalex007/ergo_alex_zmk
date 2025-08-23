@@ -53,8 +53,6 @@
         ia: ignore_alt_macro {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            wait-ms = <0>;
-            tap-ms = <0>;
             bindings
                 = <&macro_release &kp LALT>
                 , <&macro_param_1to1>
