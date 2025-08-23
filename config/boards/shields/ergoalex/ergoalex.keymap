@@ -183,18 +183,18 @@
 
         vscode_layer {
             bindings = <
-                ___        ___        ___        ___        ___                     ___  ___     ___     ___     ___
-                ___        &kp LG(B)  &kp LG(J)  &kp LC(LS(N4))  &kp LG(LS(P))      ___  &kp F5  &kp F3  &kp F6  ___
-                &kp LSHFT  &kp LALT   &kp F12    &kp LG(P)  ___                     ___  &kp F1  &kp F4  &kp F2  ___
-                ___        ___        ___        ___        ___                     ___  ___     ___     ___     ___
-                                      ___        ___        ___                     ___  ___     ___
+                ___        ___        ___        ___        ___                     ___  ___               ___     ___     ___
+                ___        &kp LG(B)  &kp LG(J)  &kp LC(LS(N4))  &kp LG(LS(P))      ___  &kp LG(LA(LEFT))  &kp F3  &kp LG(LA(RIGHT))  ___
+                &kp LSHFT  &kp LALT   &kp F12    &kp LG(P)  ___                     ___  &kp F1            &kp F4  &kp F2  ___
+                ___        ___        ___        ___        ___                     ___  ___               ___     ___     ___
+                                      ___        ___        ___                     ___  ___               ___
             >;
         };
 
         os_nav_layer {
             bindings = <
                 ___         ___           ___           ___       ___            ___  ___               ___       ___                ___
-                &ia C_PREV  &ia C_VOL_DN  &ia C_VOL_UP  &ia C_PP  &ia C_NEXT     ___  &ia LG(LA(LEFT))  &kp UP    &ia LG(LA(RIGHT))  ___
+                &ia C_PREV  &ia C_VOL_DN  &ia C_VOL_UP  &ia C_PP  &ia C_NEXT     ___  ___               &kp UP    ___                ___
                 ___         ___           ___           ___       ___            ___  &kp LEFT          &kp DOWN  &kp RIGHT          ___
                 ___         ___           ___           ___       ___            ___  ___               ___       ___                ___
                                           ___           ___       ___            ___  ___               ___
