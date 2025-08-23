@@ -44,7 +44,7 @@
             tap-ms = <0>;
             bindings
                 = <&macro_press &mo OSNAV &kp LALT>
-                , <&macro_tap &kp N1>
+                , <&macro_tap &kp LSHFT>
                 , <&macro_pause_for_release>
                 , <&macro_release &mo OSNAV &kp LALT>
                 ;
