@@ -119,10 +119,9 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <TAP>;
+            tapping-term-ms = <150>;
             bindings = <&alt_tab>, <&kp>;
             display-name = "shortcat-alttab-holdtap";
-            // hold-while-undecided;
         };
 
     };
