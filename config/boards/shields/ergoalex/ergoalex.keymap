@@ -122,7 +122,7 @@
             tapping-term-ms = <TAP>;
             bindings = <&alt_tab>, <&kp>;
             display-name = "shortcat-alttab-holdtap";
-            hold-while-undecided;
+            // hold-while-undecided;
         };
 
     };
