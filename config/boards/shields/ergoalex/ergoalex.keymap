@@ -181,7 +181,7 @@
 
         vscode_layer {
             bindings = <
-                ___        ___        ___        ___        ___                     ___  ___     ___     ___     ___
+                ___        ___        ___        &kp LA(LS(N3))  ___                ___  ___     ___     ___     ___
                 ___        &kp LG(B)  &kp LG(J)  &kp LA(LC(N4))  &kp LG(LS(P))      ___  &kp F5  &kp F3  &kp F6  ___
                 &kp LSHFT  &kp LALT   &kp F12    &kp LG(P)       &kp LA(LCTRL)      ___  &kp F1  &kp F4  &kp F2  ___
                 ___        ___        ___        ___        ___                     ___  ___     ___     ___     ___
