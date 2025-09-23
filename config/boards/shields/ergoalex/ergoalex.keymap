@@ -191,11 +191,11 @@
 
         os_nav_layer {
             bindings = <
-                ___         ___           ___           ___       ___            ___  ___    ___    ___    ___
-                &ia C_PREV  &ia C_VOL_DN  &ia C_VOL_UP  &ia C_PP  &ia C_NEXT     ___  ___    &kp K  ___    ___
-                ___         ___           ___           ___       ___            ___  &kp H  &kp J  &kp L  ___
-                ___         ___           ___           ___       ___            ___  ___    ___    ___    ___
-                                          ___           ___       ___            ___  ___    ___
+                ___         ___           ___           ___       ___            ___         ___           &ia C_PP  ___           ___
+                &ia C_PREV  &ia C_VOL_DN  &ia C_VOL_UP  &ia C_PP  &ia C_NEXT     ___         &ia C_VOL_DN  &kp K     &ia C_VOL_UP  ___
+                ___         ___           ___           ___       ___            &ia C_PREV  &kp H         &kp J     &kp L         &ia C_NEXT 
+                ___         ___           ___           ___       ___            ___         ___           ___       ___           ___
+                                          ___           ___       ___            ___         ___           ___
             >;
         };
 
