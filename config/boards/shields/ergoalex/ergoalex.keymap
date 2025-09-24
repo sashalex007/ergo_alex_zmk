@@ -184,7 +184,7 @@
                 ___        ___        &kp LA(LS(N3)) ___             ___                ___  ___     ___     ___     ___
                 ___        &kp F7     &kp F9         &kp LA(LC(N4))  &kp LG(LS(P))      ___  &kp F5  &kp F3  &kp F6  ___
                 &kp LSHFT  &kp LALT   &kp F12        &kp LG(P)       &kp LA(LCTRL)      ___  &kp F1  &kp F4  &kp F2  ___
-                ___        &kp F8     ___            ___             ___                ___  ___     ___     ___     ___
+                ___        ___        &kp F8         ___             ___                ___  ___     ___     ___     ___
                                       ___            ___             ___                ___  ___     ___
             >;
         };
