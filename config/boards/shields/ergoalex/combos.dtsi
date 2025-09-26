@@ -8,6 +8,7 @@
 #define CODE 5
 #define OSNAV 6
 #define GAME 7
+#define NOHRM 8
 
               
 //pseudo-mod-keys
@@ -115,7 +116,10 @@
         COMBO(double_quote, &kp DQT, 29 30, 80, SLOW_IDLE)
 
         //toggle game layer
-        COMBO2(toggle_game, &tog GAME, 41 44, 80, SLOW_IDLE)
+        //COMBO2(toggle_game, &tog GAME, 41 44, 80, SLOW_IDLE)
+
+        //toggle nohrm layer
+        COMBO2(toggle_game, &tog NOHRM, 41 44, 80, SLOW_IDLE)
         
         //fast spotlight
         //COMBO(spotlight, &kp RG(SPACE), 28 40, 80, SLOW_IDLE)
