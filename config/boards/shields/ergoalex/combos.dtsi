@@ -38,7 +38,7 @@
   combo_##NAME { \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
-    layers = <DEF GAME>; \
+    layers = <DEF GAME NOHRM>; \
     timeout-ms = <TAP>; \
     require-prior-idle-ms = <IDLE>; \
     slow-release; \
