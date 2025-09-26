@@ -8,14 +8,14 @@
 #define ___ &trans
 
 #define DEF 0
-#define NAV 1
-#define SPL 2
-#define SPR 3
-#define SYS 4
-#define CODE 5
-#define OSNAV 6
-#define GAME 7
-#define NOHRM 8
+#define NOHRM 1
+#define NAV 2
+#define SPL 3
+#define SPR 4
+#define SYS 5
+#define CODE 6
+#define OSNAV 7
+#define GAME 8
 
 #define TAP 280 
 #define IDLE 200
@@ -139,6 +139,16 @@
                                             &kp SPACE   &mo CODE    &sys SYS LG(LS(N4))      &sys SYS LG(LS(N5))  &sc_at 0 LS(LG(SPACE))  &mo NAV
             >;
         };
+
+        nohrm_layer {
+            bindings = <
+                &kp N1        &kp N2        &kp N3      &kp N4      &kp N5                   &kp N6               &kp N7      &kp N8      &kp N9       &kp N0
+                &colon        &kp COMMA     &kp DOT     &kp P       &kp Y                    &kp F                &kp G       &kp C       &kp R        &kp L
+                &kp A         &kp O         &kp E       &kp U       &kp I                    &kp D                &kp H       &kp T       &kp N        &kp S
+                &kp SQT       &kp Q         &kp J       &kp K       &kp X                    &kp B                &kp M       &kp W       &kp V        &kp Z
+                                            &kp SPACE   &mo CODE    &sys SYS LG(LS(N4))      &sys SYS LG(LS(N5))  &sc_at 0 LS(LG(SPACE))  &mo NAV
+            >;
+        };
    
         nav_layer {
             bindings = <
@@ -209,17 +219,6 @@
                                        &kp SPACE  &kp BSPC  XXX       XXX     XXX  &kp SPACE
             >;
         };
-
-        nohrm_layer {
-            bindings = <
-                &kp N1        &kp N2        &kp N3      &kp N4      &kp N5                   &kp N6               &kp N7      &kp N8      &kp N9       &kp N0
-                &colon        &kp COMMA     &kp DOT     &kp P       &kp Y                    &kp F                &kp G       &kp C       &kp R        &kp L
-                &kp A         &kp O         &kp E       &kp U       &kp I                    &kp D                &kp H       &kp T       &kp N        &kp S
-                &kp SQT       &kp Q         &kp J       &kp K       &kp X                    &kp B                &kp M       &kp W       &kp V        &kp Z
-                                            &kp SPACE   &mo CODE    &sys SYS LG(LS(N4))      &sys SYS LG(LS(N5))  &sc_at 0 LS(LG(SPACE))  &mo NAV
-            >;
-        };
-
 
         blank_layer {
             bindings = <

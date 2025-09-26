@@ -1,16 +1,15 @@
 
 //layers
 #define DEF 0
-#define NAV 1
-#define SPL 2
-#define SPR 3
-#define SYS 4
-#define CODE 5
-#define OSNAV 6
-#define GAME 7
-#define NOHRM 8
+#define NOHRM 1
+#define NAV 2
+#define SPL 3
+#define SPR 4
+#define SYS 5
+#define CODE 6
+#define OSNAV 7
+#define GAME 8
 
-              
 //pseudo-mod-keys
 #define SPL_KEY 26
 #define SPR_KEY 23
@@ -38,7 +37,7 @@
   combo_##NAME { \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
-    layers = <DEF GAME NOHRM>; \
+    layers = <DEF NOHRM>; \
     timeout-ms = <TAP>; \
     require-prior-idle-ms = <IDLE>; \
     slow-release; \
