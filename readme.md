@@ -51,7 +51,7 @@ co = change all occurences (selection)
         ╰─────────────────╯ ╰──────────────────╯
 VS2 = activate vscode2 layer
 exp = show/hide explorer
-term = show/hind terminal
+term = show/hide terminal
 win = choose workspace
 close = close tab
 open = chose file to open
