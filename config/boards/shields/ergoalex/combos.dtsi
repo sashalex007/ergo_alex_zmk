@@ -27,22 +27,11 @@
   combo_##NAME { \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
-    layers = <DEF NOHRM>; \
+    layers = <DEF NOHRM GAME>; \
     timeout-ms = <TAP>; \
     require-prior-idle-ms = <IDLE>; \
     slow-release; \
   };
-
-#define COMBO2(NAME, BINDINGS, KEYPOS, TAP, IDLE) \
-  combo_##NAME { \
-    bindings = <BINDINGS>; \
-    key-positions = <KEYPOS>; \
-    layers = <DEF NOHRM>; \
-    timeout-ms = <TAP>; \
-    require-prior-idle-ms = <IDLE>; \
-    slow-release; \
-  };
-
 
   /*                KEY POSITIONS
   ╭────────────────────╮ ╭────────────────────╮
@@ -115,10 +104,10 @@
         COMBO(double_quote, &kp DQT, 29 30, 80, SLOW_IDLE)
 
         //toggle game layer
-        COMBO2(toggle_game, &tog GAME, 41 44, 80, SLOW_IDLE)
+        COMBO(toggle_game, &tog GAME, 41 44, 80, SLOW_IDLE)
 
         //toggle nohrm layer
-        //COMBO2(toggle_game, &tog NOHRM, 41 44, 80, SLOW_IDLE)
+        //COMBO(toggle_game, &tog NOHRM, 41 44, 80, SLOW_IDLE)
         
         //fast spotlight
         //COMBO(spotlight, &kp RG(SPACE), 28 40, 80, SLOW_IDLE)
