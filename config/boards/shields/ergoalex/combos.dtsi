@@ -22,12 +22,16 @@
 #define SLOW_IDLE 180
 
 
-//make combo
+//make combo (off on the game layer)
 #define COMBO(NAME, BINDINGS, KEYPOS, TAP, IDLE) \
+  COMBO_ON(DEF NOHRM, NAME, BINDINGS, KEYPOS, TAP, IDLE)
+
+//make combo on the given layers
+#define COMBO_ON(LAYERS, NAME, BINDINGS, KEYPOS, TAP, IDLE) \
   combo_##NAME { \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
-    layers = <DEF NOHRM GAME>; \
+    layers = <LAYERS>; \
     timeout-ms = <TAP>; \
     require-prior-idle-ms = <IDLE>; \
     slow-release; \
@@ -103,8 +107,8 @@
         //fast double quotes
         COMBO(double_quote, &kp DQT, 29 30, 80, SLOW_IDLE)
 
-        //toggle game layer
-        COMBO(toggle_game, &tog GAME, 41 44, 80, SLOW_IDLE)
+        //toggle game layer (also active on GAME so it can toggle back off)
+        COMBO_ON(DEF NOHRM GAME, toggle_game, &tog GAME, 41 44, 80, SLOW_IDLE)
 
         //toggle nohrm layer
         //COMBO(toggle_game, &tog NOHRM, 41 44, 80, SLOW_IDLE)
